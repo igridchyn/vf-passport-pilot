@@ -80,3 +80,36 @@ plan:
 - AT: no adopted GPSR penalty law found (PSG 2004 still consolidated in RIS, June 2026).
 - Textiles DPP: likely 2029, not 2028.
 - Marqetir's managed tier: from €5k/mo.
+
+**#8 — PREREG-F drafted (proposed); blocking card D-002** *(delegated draft; the founder
+approves or revises on D-002, and nothing goes out before that)*.
+`docs/planning/PREREG-F-fake-door.md` fixes what test D leaves open without changing
+`decisive-test.md`.
+- **Offer:** GPSR document pack for textiles, furniture and jewellery, Chinese input, seller
+  attests, RP providers introduced and not provided. In development, early access, no payment.
+- **Price:** recommended **€249/yr for up to 10 products**. Alternatives €199/5 and €290/25.
+  Euros only. "Product" = a product model (unsourced assumption, checked at E0.1).
+- **Counting:** qualified = self-declared EU sales + launch category + decider, with the shop
+  name required for de-duplication. Reached = shown the price, then answered as qualified;
+  the bar is therefore conditional on a response, so the funnel above the 50 and D by route
+  are reported. One timestamp. Void grounds fixed in advance; D also reported with voids in
+  place. LOI or pre-pay intent counts only when confirmed in writing 1:1 (a form signature or
+  tick alone does not). One per business.
+- **Tools:** Cloudflare Pages + custom domain (about US$10.44/yr: a cost item, the founder's),
+  because github.io, pages.dev and vercel.app are reported blocked in China. Tally (EU, free),
+  linked rather than embedded. Both tested from a mainland phone, in WeChat, at FD.3.
+- **Data:** the founder's Tally, WeChat/e-mail and files only. Partners introduce and never
+  hold seller data. Deletion within 30 days of G1 (opted-in launch contacts at most 12
+  months). GDPR Chapter V transfers via WeChat/e-mail and PIPL Arts. 3/53 are open legal
+  questions, with an optional review on the card.
+- **R1 hand-off applied:** price with a product-count scope; "current provider and price
+  paid" diagnostic; the ¥268–568 EU-rep anchor and EUProof (€190/yr, 1 product) in the
+  pre-mortem.
+- **Provisional** on D-001 = continue. If the founder adjusts the band, the price moves
+  inside it before approval.
+
+Deviation: the quality gate for this docs-only item used two independent read-only review
+passes (skeptic and claims rubric) in place of `/simplify` and `/code-review`, which target
+code. Round 1 found 14 issues (5 blocking: self-selected denominator, ambiguous ordering,
+discretionary voids, a false "no transfer outside the EEA" line, no legal basis for LOI
+data). Round 2 found 6 consistency issues. All were fixed; none remain open.
