@@ -1,0 +1,53 @@
+{
+  "permissions": {
+    "deny": [
+      "Edit(.autorun/config.env)",
+      "Edit(.autorun/POLICY.md)",
+      "Edit(.autorun/guard_rules.py)",
+      "Edit(.autorun/backlog.json)",
+      "Edit(.autorun/settings.loop.json)",
+      "Edit(CLAUDE.md)",
+      "Edit(.claude/**)",
+      "Edit(scripts/check.sh)",
+      "Edit(docs/planning/decisive-test.md)",
+      "Read(data/**)",
+      "Read(.env)",
+      "Read(.env.*)",
+      "Bash(git push *)",
+      "Bash(gh pr merge *)"
+    ]
+  },
+  "sandbox": {
+    "enabled": true,
+    "allowUnsandboxedCommands": false,
+    "filesystem": {
+      "allowWrite": [
+        "~/.cache/uv"
+      ],
+      "denyRead": [
+        "~/.ssh",
+        "~/.aws",
+        "~/.config/gh",
+        "data",
+        ".env"
+      ],
+      "denyWrite": [
+        ".autorun/config.env",
+        ".autorun/POLICY.md",
+        ".autorun/guard_rules.py",
+        ".autorun/backlog.json",
+        ".autorun/settings.loop.json",
+        "CLAUDE.md",
+        ".claude",
+        "docs/planning/decisive-test.md",
+        "scripts/check.sh"
+      ]
+    },
+    "network": {
+      "allowedDomains": [
+        "pypi.org",
+        "files.pythonhosted.org"
+      ]
+    }
+  }
+}

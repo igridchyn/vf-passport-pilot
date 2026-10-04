@@ -1,0 +1,17 @@
+# Data never enters git: form exports, contact lists, anything a seller or partner sends.
+/data/
+# autorun runtime state (logs, inbox, item snapshots)
+/.autorun/state/
+# secrets
+.env
+.env.*
+# python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+dist/
+build/
+*.egg-info/

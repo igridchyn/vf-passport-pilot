@@ -1,0 +1,171 @@
+{
+ "version": 1,
+ "plan": "docs/planning/validation-plan.md",
+ "review_debt_max": 6,
+ "_note": "Validation track, 2026-10-05 (decision log #1-#3). Lanes and founder minutes are estimates.",
+ "tasks": [
+  {
+   "id": "S0",
+   "title": "Import the feasibility runs and the build spec",
+   "kind": "impl",
+   "lane": "act",
+   "needs": [],
+   "owner": "founder",
+   "founder": {
+    "what": "Download three artifacts from their claude.ai chats, commit them under docs/, answer done",
+    "minutes": 15
+   },
+   "notes": "Only E0.1 waits on it."
+  },
+  {
+   "id": "R1",
+   "title": "Feasibility refresh (run 3) as a dated delta, incl. test P",
+   "kind": "research",
+   "lane": "decision",
+   "needs": [],
+   "blocking": false,
+   "founder": {
+    "what": "Read the delta and test P's status; continue / adjust / stop",
+    "minutes": 15
+   }
+  },
+  {
+   "id": "FD.1",
+   "title": "PREREG-F fake-door pre-registration (proposed)",
+   "kind": "design",
+   "lane": "decision",
+   "needs": [],
+   "blocking": true,
+   "founder": {
+    "what": "Approve or revise PREREG-F: offer, price, qualified seller, LOI definition, tools and their costs, data handling",
+    "minutes": 30
+   },
+   "allow_paths": [
+    "docs/planning/PREREG-F-fake-door.md"
+   ]
+  },
+  {
+   "id": "CH.1",
+   "title": "Channel-partner map (organisations and roles only) + BD-partner profile",
+   "kind": "research",
+   "lane": "comms",
+   "needs": [],
+   "founder": {
+    "what": "Pick the partners to approach; names stay in your own tracker",
+    "minutes": 20
+   }
+  },
+  {
+   "id": "FD.2",
+   "title": "Landing page (zh-CN + EN) and non-binding LOI, draft",
+   "kind": "comms",
+   "lane": "comms",
+   "needs": [
+    "FD.1"
+   ],
+   "founder": {
+    "what": "Review the page and LOI copy; mark changes",
+    "minutes": 30
+   }
+  },
+  {
+   "id": "FD.4",
+   "title": "Outreach kit: WeChat post, DM, forum post, partner pitch, follow-ups, tracker",
+   "kind": "comms",
+   "lane": "comms",
+   "needs": [
+    "FD.1",
+    "CH.1"
+   ],
+   "founder": {
+    "what": "Adapt the voice and approve the kit",
+    "minutes": 30
+   }
+  },
+  {
+   "id": "MV.1",
+   "title": "Desk-verify the build spec's open items",
+   "kind": "research",
+   "lane": "auto",
+   "needs": []
+  },
+  {
+   "id": "CH.2",
+   "title": "Recruit a Chinese-speaking channel partner",
+   "kind": "comms",
+   "lane": "comms",
+   "needs": [
+    "CH.1",
+    "FD.4"
+   ],
+   "owner": "founder",
+   "founder": {
+    "what": "Approach the picked partners with the pitch; agree a co-run in writing",
+    "minutes": 180
+   }
+  },
+  {
+   "id": "FD.3",
+   "title": "Publish the landing page",
+   "kind": "impl",
+   "lane": "act",
+   "needs": [
+    "FD.2"
+   ],
+   "owner": "founder",
+   "founder": {
+    "what": "Decide the cost items, get the zh-CN copy checked, deploy, wire the form, check it loads from China, answer with the URL",
+    "minutes": 90
+   }
+  },
+  {
+   "id": "FD.5",
+   "title": "Run the fake door: 50 qualified sellers in 4 weeks",
+   "kind": "comms",
+   "lane": "comms",
+   "needs": [
+    "FD.3",
+    "FD.4"
+   ],
+   "owner": "founder",
+   "founder": {
+    "what": "Start outreach (starts the window), reach 50 qualified sellers, collect LOIs, log weekly counts",
+    "minutes": 600
+   }
+  },
+  {
+   "id": "G1",
+   "title": "Gate evaluation per decisive-test.md",
+   "kind": "design",
+   "lane": "decision",
+   "needs": [
+    "FD.5",
+    "R1",
+    "CH.2"
+   ],
+   "owner": "founder",
+   "blocking": true,
+   "founder": {
+    "what": "Apply the decision table to D/P/C and record the decision",
+    "minutes": 30
+   }
+  },
+  {
+   "id": "E0.1",
+   "title": "Plan the GPSR-first PoC build from the spec pack (after a GO)",
+   "kind": "design",
+   "lane": "checkpoint",
+   "needs": [
+    "G1",
+    "S0"
+   ],
+   "founder": {
+    "what": "Review and sign the build design, impl-plan and backlog extension",
+    "minutes": 90
+   },
+   "allow_paths": [
+    ".autorun/backlog.json"
+   ]
+  }
+ ]
+}
