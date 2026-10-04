@@ -9,11 +9,17 @@ You are continuing the autonomous execution of the **PassportPilot validation tr
 `.autorun/LEDGER.md` is the one-line-per-item history. **Do not read it as part of an item** — `git log` has the detail if you need it.
 
 <!-- ===== CURRENT ITEM — step 11 replaces ONLY this block; change nothing else in this file ===== -->
-<!-- kind: research -->
-<!-- item: R1 -->
-**R1 — Feasibility refresh (run 3) as a dated delta, incl. test P** · lane **decision**
-- Plan: `autorun-plan show R1` (docs/planning/validation-plan.md).
-- Operator's part (15 min): Read the delta and test P's status; continue / adjust / stop
+<!-- kind: design -->
+<!-- item: FD.1 -->
+**FD.1 — PREREG-F fake-door pre-registration (proposed)** · lane **decision**
+- Plan: `autorun-plan show FD.1` (docs/planning/validation-plan.md).
+- Operator's part (30 min): Approve or revise PREREG-F: offer, price, qualified seller, LOI definition, tools and their costs, data handling
+- May touch protected paths: docs/planning/PREREG-F-fake-door.md
+- Hand-off from R1 (provisional until card D-001 is answered; default "continue"): state the page
+  price as one figure with a product-count scope ("€X/yr for up to N products") inside the
+  €150–300/yr band; add "current compliance provider and price paid" as a reported diagnostic;
+  record the Chinese EU-rep anchor (¥268–568/yr) and EUProof (€190/yr, 1 product) as known risks
+  in the pre-mortem. See docs/research/1_feasibility_refresh.md §3–§5 and decision #7.
 <!-- ===== END CURRENT ITEM ===== -->
 
 Begin with the skill, then the reads, then the current item.

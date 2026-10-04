@@ -1,3 +1,10 @@
 {
- "done": {}
+ "done": {
+  "R1": {
+   "commit": "c99895a",
+   "date": "2026-10-05"
+  }
+ },
+ "inserted": [],
+ "reviewed": []
 }
