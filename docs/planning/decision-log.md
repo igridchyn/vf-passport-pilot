@@ -47,3 +47,36 @@ headline metric "attestable GPSR pack in ≤20 min vs €400–500 and 3–5 day
 the repo; an honest fake door (in development, early access, no payment, no invented proof);
 regulatory accuracy (no "€10M / 4%", no DPP-date urgency); tooling, not certification; no
 spend without a founder card; no secrets.
+
+**#7 — Feasibility refresh (run 3) read: continue; test P PASS (provisional)** *(delegated;
+the founder answers on the R1 card)*. `docs/research/1_feasibility_refresh.md` is a dated delta
+since run 2 (15 Jul 2026). Every source was read as a search snippet, because the session's
+proxy refused page fetches.
+- **Test P: PASS, provisional.** No announcement found that Amazon or Etsy ships a free native
+  GPSR technical-file generator or full-DPP automation.
+- **Amazon at Accelerate (22–24 Sep 2026):** compliance checking and lab routing ("test once,
+  sell globally"), a 2027 "requirements and costs before manufacture" view, and a free year of
+  Quick Plus, a general-purpose AI workspace. Five watch items are listed for the G1 re-check.
+- **Regulation:** the DPP Registry went live on 20 Jul 2026, a Commission deliverable. Textiles
+  DPP is likely 2029 (adoption planned Q4 2027). The battery passport date is unchanged.
+  GPSR-first is reinforced.
+- **Competitors:** EUProof generates the same GPSR document set from €190/yr (1 product,
+  English). EAS bundles RP and AI-assisted documents from €199/yr with a Chinese site.
+  Chinese EU-rep anchors are ¥268–568/yr.
+- **Channel:** compliance reaches Chinese sellers bundled, through SPN-listed VAT/EPR/EU-rep
+  agents, ERP compliance arms and test labs.
+
+**Recommendation: continue.** No change to `decisive-test.md`. "Adjust D's band before
+outreach" is steelmanned in the refresh's §5 and offered on the card. Refinements inside the
+plan:
+- FD.1: price stated with a product-count scope, plus a "current provider and price paid"
+  diagnostic.
+- FD.2: position on Chinese-first plus partner, not "AI documents".
+- CH.1: partner-type order as in the refresh's §4.
+
+**Precision on #5** (secondary-sourced until the gazettes are opened):
+- IT D.Lgs 78/2026: €10k–100k base, ~€150k only for serious risk.
+- DE ProdSG (in force 19 Feb 2026): €10k general, €100k top tier.
+- AT: no adopted GPSR penalty law found (PSG 2004 still consolidated in RIS, June 2026).
+- Textiles DPP: likely 2029, not 2028.
+- Marqetir's managed tier: from €5k/mo.
