@@ -9,17 +9,22 @@ You are continuing the autonomous execution of the **PassportPilot validation tr
 `.autorun/LEDGER.md` is the one-line-per-item history. **Do not read it as part of an item** — `git log` has the detail if you need it.
 
 <!-- ===== CURRENT ITEM — step 11 replaces ONLY this block; change nothing else in this file ===== -->
-<!-- kind: design -->
-<!-- item: FD.1 -->
-**FD.1 — PREREG-F fake-door pre-registration (proposed)** · lane **decision**
-- Plan: `autorun-plan show FD.1` (docs/planning/validation-plan.md).
-- Operator's part (30 min): Approve or revise PREREG-F: offer, price, qualified seller, LOI definition, tools and their costs, data handling
-- May touch protected paths: docs/planning/PREREG-F-fake-door.md
-- Hand-off from R1 (provisional until card D-001 is answered; default "continue"): state the page
-  price as one figure with a product-count scope ("€X/yr for up to N products") inside the
-  €150–300/yr band; add "current compliance provider and price paid" as a reported diagnostic;
-  record the Chinese EU-rep anchor (¥268–568/yr) and EUProof (€190/yr, 1 product) as known risks
-  in the pre-mortem. See docs/research/1_feasibility_refresh.md §3–§5 and decision #7.
+<!-- kind: research -->
+<!-- item: CH.1 -->
+**CH.1 — Channel-partner map (organisations and roles only) + BD-partner profile** · lane **comms**
+- Plan: `autorun-plan show CH.1` (docs/planning/validation-plan.md).
+- Operator's part (20 min): Pick the partners to approach; names stay in your own tracker
+- Hand-off from R1 / FD.1:
+  - Order the map as in docs/research/1_feasibility_refresh.md §4: SPN-listed VAT/EPR/EU-rep
+    agents first, then ERP compliance arms, then test labs; associations for credibility.
+    This order is provisional on card D-001.
+  - PREREG-F (proposed, card D-002 blocking) sets the partner terms CH.1 should describe:
+    - partners only introduce sellers and share a channel-coded form link; they never hold
+      seller data or LOIs (§2.2, §6.2);
+    - pay is never tied to the outcome, so no per-LOI pay and no revenue share that depends
+      on a GO; a fixed fee is a cost card (§5.1);
+    - a deal for after the gate is negotiated only after G1.
+    The BD-freelancer profile must not recommend per-LOI or revenue-share pay for the test.
 <!-- ===== END CURRENT ITEM ===== -->
 
 Begin with the skill, then the reads, then the current item.
