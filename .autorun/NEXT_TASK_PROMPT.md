@@ -9,11 +9,14 @@ You are continuing the autonomous execution of the **PassportPilot validation tr
 `.autorun/LEDGER.md` is the one-line-per-item history. **Do not read it as part of an item** — `git log` has the detail if you need it.
 
 <!-- ===== CURRENT ITEM — step 11 replaces ONLY this block; change nothing else in this file ===== -->
-<!-- kind: default -->
-<!-- item: wait -->
-**Nothing is eligible.** Waiting on the operator: A-001, D-001, D-002, D-003, M-001. At session start run `autorun-plan card inbox`, then `autorun-plan next`; if it still says wait, write PAUSE.
-- Hand-off from MV.1: D-003 (non-blocking) is an FYI for D-002's price. If D-002 is answered
-  first, close D-003 as "keep". If the answer is "reconsider", apply it together with D-002/D-001.
+<!-- kind: design -->
+<!-- item: card:D-002 -->
+**Apply card D-002 — Approve PREREG-F: fake-door price and rules** (task FD.1).
+- The operator answered: **A** — Founder approves the PREREG-F rules as drafted and delegated the price choice to Claude, who picks A: EUR 249/yr for up to 10 products (mid-band, so a PASS or FAIL is not an artefact of the band's edge; consistent with D-003 = keep). Mark PREREG-F approved.
+- Read `.autorun/attention/D-002.md`, carry the answer out (autorun:item, *Cards*), then `autorun-plan card close D-002`.
+- Operator (2026-10-05): this block names card:D-002 directly because a session that starts on
+  `wait` does not get the card task's allow_paths from the gate (LESSONS.md, 2026-10-05).
+  D-003 is answered too (keep); apply it here or as the next item.
   The proxy refused all page fetches again, so the starred sources in
   `docs/research/2_spec_open_items.md` §6 still need a full read before the build.
 <!-- ===== END CURRENT ITEM ===== -->
