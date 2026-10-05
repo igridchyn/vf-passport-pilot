@@ -113,3 +113,59 @@ passes (skeptic and claims rubric) in place of `/simplify` and `/code-review`, w
 code. Round 1 found 14 issues (5 blocking: self-selected denominator, ambiguous ordering,
 discretionary voids, a false "no transfer outside the EEA" line, no legal basis for LOI
 data). Round 2 found 6 consistency issues. All were fixed; none remain open.
+
+**#9 — CH.1 channel-partner map drafted; comms card for the founder's picks** *(delegated
+draft; the founder picks whom to approach on the card and keeps contact people in their own
+tracker)*. `docs/outreach/channels.md` maps 28 organisations, by organisation and role title
+only. Tiers 1–4 follow R1 §4's order, provisional on D-001; tiers 5–6 come from the CH.1
+task text.
+- **Tiers:** 5 China-facing VAT/EPR/EU-rep agents, 4 ERP/seller-SaaS vendors, 7 test labs,
+  4 associations and government training platforms, 4 payment-provider ecosystems, and 4 EU
+  RP providers (the RP-brokerage leg, after G1 only). Directories and venues are listed
+  separately and are not partners. Forwarders are left out: no evidence they bundle GPSR.
+- **Partner terms copied from PREREG-F §2.2, §5.1 and §6.2:**
+  - partners introduce sellers and share a channel-coded link, and never hold seller data or LOIs;
+  - no outcome-dependent pay;
+  - a fixed fee goes on a cost card;
+  - no post-gate promise during the test.
+  The per-row "later interest" column is post-G1 context and is never pitched. §1's common
+  list is the only test offer.
+- **Recommended first wave:** eVatMaster, J&P, Taxually, Mabang, CTI and the Shenzhen
+  Cross-border E-commerce Association. Rows that already sell GPSR documents (AVASK, SGS,
+  Intertek, EAS) are held back.
+- **BD-partner profile:** the market norm is commission or revenue share, which the test
+  excludes. It recommends an unpaid co-run with an organisation, or a fixed fee on a card.
+- **Open question for the founder (on the card):** read `decisive-test.md`'s partner-type
+  list for test C as examples, so that a VAT agent, ERP or lab partner counts. Recommended:
+  yes. The first wave depends on the answer. If the list is read as closed, the fallback is
+  to lead with the associations, start the BD-freelancer route and research sourcing
+  agencies and forwarders.
+- **Method limit:** WebSearch snippets only, because the proxy refused page fetches again.
+  The first-wave rows were re-searched. One search result exposed a named person's phone and
+  e-mail, and none of it was recorded.
+
+Deviation: the quality gate for this docs-only item used independent read-only reviews
+(claims-audit rubric plus PREREG-F consistency) in place of `/simplify` and `/code-review`.
+Round 1 found 0 blockers, 2 majors and 12 minors:
+- the per-row gains read as post-gate inducements;
+- a first-wave rationale leaned on referral tiers;
+- tags were too strong;
+- one cross-reference was wrong;
+- a CSDN user-handle URL was cited.
+All were fixed. The first session stopped on the session limit before round 2. A resumed
+session ran round 2 and the step-8 skeptic together, as one independent subagent with web
+spot-checks of the first-wave rows. It found 0 blockers, 3 majors and 7 minors:
+- the first wave quietly depended on reading test C's list as examples (now stated, with a
+  fallback for a closed reading);
+- the "Later interest" column mixed in what is offered during the test (now "—");
+- the draft of this entry claimed a round 2 that had not yet run (rewritten);
+- R1 §4 was cited for tiers 5–6;
+- CTI's textile coverage had no source;
+- row 5 was unlinked (now pinned to the agent's own 2021 article);
+- §8 was mis-paraphrased;
+- a wording slip about Payoneer.
+All were fixed, except that the Sohu article URLs, which end in a numeric 搜狐号 account ID,
+are kept. They are article links, not profile links, and name no one. Spot-checks of
+Taxually's tiers, J&P's cooperation page, Mabang's service market and CTI's GPSR service
+were supportive. They also turned up J&P's first-mile logistics service (March 2025), which
+is now on row 2. No finding remains open.
