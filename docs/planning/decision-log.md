@@ -303,3 +303,71 @@ the page at FD.3.
 - have a native speaker check every zh-check line.
 
 Serves test D.
+
+## 2026-10-06
+
+**#14 — FD.4 outreach kit drafted; comms card for review** *(delegated; comms lane)*. The loop
+drafted the outreach texts for test D and the partner pitch for CH.2. Nothing is sent or
+posted.
+- Files, all in `docs/outreach/`:
+  - `kit.md`: a WeChat group post; the standard first 1:1 message, with a partner-introduction
+    variant; a seller-forum post; follow-ups FU1–FU8; channel codes; short answers to common
+    questions.
+  - `partner-pitch.md`: the pitch and the written co-run confirmation.
+  - `tracker.md` and `tracker-template.csv`: aggregate columns only.
+- Every text is zh-CN and EN, and reuses the FD.2 wording. The pre-payment question is
+  `form.md` P1 word for word.
+
+Choices and deviations. All stay inside the approved PREREG-F, which was not edited:
+1. **The forum post is not for Amazon's own Seller Forums.** The plan says "Amazon-seller-forum
+   post", but Amazon's Seller Forums guidelines prohibit commercial content: advertising,
+   promotions, solicitations ([guidelines, EU](https://sellercentral-europe.amazon.com/seller-forums/guidelines);
+   [established], snippet-read 2026-10-06).
+   - A post there would break the rules of the platform that test P is about.
+   - It could also read as Amazon's endorsement.
+   - So the post targets independent seller forums, only in sections whose rules allow it,
+     and is written as a question to sellers with a disclosure.
+2. **Quote-reply is the way to confirm an LOI** (PREREG-F §3.2 asks for a reply that "quotes or
+   attaches" the LOI text). In both FU2 (1:1) and FU3 (form signers), the founder pastes the
+   full LOI text into the message. A seller's quote-reply saying "we agree" counts as quoting
+   it, and so does a signed or chopped copy. Both routes use the same standard.
+3. **No cold messages.** The founder writes first only to a seller who wrote to the founder or
+   added the founder, or who asked in a thread to be contacted. There is no list-building and
+   no scraping. A partner never forwards a seller's contact card (§6.2).
+   - **Recorded defect in FD.2's privacy notice:** it has no GDPR Art. 14 source-of-data
+     statement. Under the rule above it does not need one, because all data comes from the
+     seller.
+   - If the founder wants founder-initiated messages, the notice needs that statement first,
+     plus the transfer safeguard already gated on M-002.
+4. **Messages link the form, not the page.** The form carries the channel code; the page's
+   button is coded `web` and would misattribute sellers. Codes: `DM` (founder), `P1…`
+   (partners), `WG1…` (WeChat groups), `BB1…` (forums), `E1…` (events), `X` (other).
+5. **The first 1:1 message has five questions.** Three are the §2.1 qualification questions.
+   Two are the form's Q4 business type (#13) and the shop name.
+6. **A call recap carries no signal.** A verbal yes leads to FU2, and only a written reply to
+   FU2 counts.
+7. **Tracker:** the weekly rows are provisional. At G1, D and every "among the 50" figure are
+   recomputed from the founder's private per-seller list. Its fields are described, but no
+   template is kept in the repo.
+8. **Partners:**
+   - They introduce 1:1 only; no group chats (拉群).
+   - They answer only with the kit's short answers.
+   - They do not introduce their own staff or relatives.
+   - They are never named in public text, and there is no exception by consent: PREREG-F
+     §7.3.
+9. **Every message**, including short replies in a thread, carries in development · early
+   access · no payment now. The one exception is the deletion reply (FU7). It carries "in
+   development, not available, no payment taken" but no sign-up invitation, which would be
+   inappropriate after a deletion request.
+
+Claims audit (`/claims-audit`, run by an independent read-only subagent):
+- Round 1: 0 BLOCKER, 9 MAJOR, 17 MINOR.
+- Round 2: 0 BLOCKER, 1 MAJOR, 5 MINOR. These were the contact-card loophole in the
+  no-cold-message rule; a gate placed on the wrong card; status lines in the §6 answer cells;
+  this entry missing; the tone of FU7; and price referrals.
+- All were fixed after round 2. That last set of fixes was not re-audited, because the gate's
+  two rounds were used up.
+- `/simplify` and `/code-review` were not run: the diff is copy only, so the claims audit was
+  the review.
+
+Serves tests D and C.

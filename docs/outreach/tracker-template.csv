@@ -1,0 +1,2 @@
+week,week_start,channel,first_1to1_sent,replies_1to1,unqualified_1to1,form_submissions,form_not_qualified,reached_1to1,reached_form,void_duplicate,void_excluded,void_self_corrected,void_pre_outreach,contact_left_1to1,contact_left_form,loi_confirmed,prepay_confirmed,counting_businesses_1to1,counting_businesses_form,unconfirmed_form_loi,unconfirmed_form_prepay,price_objections,reached_after_50,signals_after_50
+1,YYYY-MM-DD,DM,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
