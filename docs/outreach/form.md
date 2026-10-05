@@ -157,10 +157,10 @@ EN: "We may ask you to confirm this in writing, using the contact you left."
 
 ## Screen 6 — Thank you
 
-zh-CN [zh-check]: "谢谢！PassportPilot 仍在开发中，尚未上线，现在不收取任何款项。如果您留下了联系方式，PassportPilot 上线时（如果上线）我们会就抢先体验与您联系；在此之前，我们可能会请您确认您签署的意向书或预付意向。您可以随时要求删除您的信息：{{CONTACT}}。"
+zh-CN [zh-check]: "谢谢！PassportPilot 仍在开发中，尚未上线，现在不收取任何款项。如果您勾选了测试结束后保留联系方式，PassportPilot 上线时（如果上线）我们会告知您；在此之前，我们可能会请您确认您签署的意向书或预付意向。您可以随时要求删除您的信息：{{CONTACT}}。"
 
 EN: "Thank you. PassportPilot is in development and not available yet. No payment is taken
-now. If you left a contact, we will get in touch about early access if and when it launches;
+now. If you asked to be kept informed after the test, we will tell you if and when it launches;
 before that, we may ask you to confirm any letter of intent or pre-payment answer. You can ask us to delete
 your information at any time: {{CONTACT}}."
 

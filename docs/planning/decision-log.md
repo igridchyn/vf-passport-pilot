@@ -395,3 +395,12 @@ registered, deployed or sent. FD.3 is **not done**; it closes when the founder a
 - Open founder cards: A-001, A-002, D-001, M-001, M-002, M-003, M-004.
 
 Serves test D (and test C: the partner confirmation in M-004 needs these links).
+
+**#16 — Operator fix after FD.2's independent verifier (2026-10-06)** *(delegated)*. The
+verifier passed FD.2 with one MAJOR: the landing page stated an Art. 19 listing duty ("the EU
+Responsible Person's name and address go on the listing") that PREREG-F §1.1 does not allow and
+that the FD.3 EUR-Lex check does not cover. The sentence is removed in both languages; the
+marketplace sentence already names the Responsible Person field. One MINOR is fixed with it:
+the form's thank-you screen now promises a launch notice only to sellers who ticked T2
+(PREREG-F §6.3). The imprint placeholder's missing zh-check markers are left as they are,
+because the placeholder will be replaced. M-002's review covers the corrected text.
