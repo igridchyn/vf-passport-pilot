@@ -169,3 +169,60 @@ are kept. They are article links, not profile links, and name no one. Spot-check
 Taxually's tiers, J&P's cooperation page, Mabang's service market and CTI's GPSR service
 were supportive. They also turned up J&P's first-mile logistics service (March 2025), which
 is now on row 2. No finding remains open.
+
+**#10 — MV.1 build-spec open items desk-checked; card D-003 for a new competitor** *(delegated; non-blocking)*.
+`docs/research/2_spec_open_items.md`. The spec pack is not imported (S0), so its wording was
+not seen; the five items come from the plan. All evidence is snippet-read, because the proxy
+refused page fetches again.
+- **Amazon document limits:** partly confirmed. Safety documents as PDF ≤10 MB per EU store,
+  in that store's language; PS01–PS06 images; via the API, a public URL. No "title rule" found.
+- **SP-API GPSR attributes:** available since 18 Nov 2024 through the Listings Items API and
+  JSON_LISTINGS_FEED. The legacy XML/flat-file feeds took them from 3 Feb 2025, but those
+  feeds were removed on 31 Jul 2025. Access needs an approved developer registration. The
+  announced SP-API fees were cancelled on 12 May 2026 (trade press). The manual export pack
+  stays; use the attribute names as its column names.
+- **WeChat for a foreign sole proprietor:** unresolved, because sources conflict on whether
+  overseas Service Accounts are enterprise-only. WeChat Login needs Open Platform verification
+  (US$99). Recorded as a **build risk**: the build plans non-WeChat login first. The US$99 is
+  spend and goes on a card if it comes up. The test needs neither (founder's own WeChat,
+  #8/#9). It does carry a **test risk**: WeChat polices marketing from personal accounts
+  (friend-add caps, bans; [plausible]), so partner-led posting is the safer route at FD.3/CH.2.
+- **Manual cost of a GPSR technical file:** no non-vendor per-file figure exists in what was
+  reachable. "€400–500" is one vendor's done-for-you price (EaseCert). Others sell from about
+  €99 (one-off, per order) to €199/yr, and possibly from €49 (GPSRCheck, unchecked), so it is neither the market price nor a manual baseline, and "3–5 days" is
+  unsupported. An assumption-labelled in-house range is given for internal use only. The
+  pitch is unaffected, because PREREG-F §1.1 already drops the comparison.
+- **Supabase:** four EU-member regions; choose Frankfurt explicitly (the general "Europe"
+  region can land in London or Zurich). Click-through DPA with SCCs; the importer is
+  Supabase Pte. Ltd. (Singapore), which joins the open Chapter V question in #8.
+- **New competitor (by-product):** Sevarto (DE) sells generated GPSR risk-analysis drafts
+  and German warnings from €99 net per order for up to 10 products ([vendor claim]). This
+  adds to R1 §3. **Card D-003** (decision, non-blocking, keep | reconsider; recommended:
+  keep D-002's option A) puts it before the founder ahead of the price decision.
+
+No item of the five changes the gate or the pitch.
+
+Quality gate (docs-only, as #9): one independent read-only review, run together with the
+step-8 skeptic and with web spot-checks. Round 1 found 0 blockers, 3 majors and 7 minors.
+Majors:
+- the legacy feeds' removal was missed;
+- SP-API access and fees were not mentioned;
+- "€400-plus" was presented as the market price.
+
+Minors:
+- the wage and labour-cost bases were not alike;
+- translation was not excluded;
+- the WeChat personal-account risk was missing;
+- "one PDF" was overstated;
+- the changelog date's tag was too strong;
+- the Supabase entity was cited from a secondary source;
+- the 30-day WeChat window's tag was too strong.
+
+All were fixed after the removal, fees and Sevarto facts were re-searched by this session.
+Round 2 found 0 blockers, 2 majors and 9 minors.
+Majors:
+- a WeChat table row was broken;
+- the card said Sevarto showed no EU-language output, but its output is German.
+
+Minors (tags, a source for the fee postponement, wording of the price comparison, the card's
+readability, this count): all were fixed. Nothing remains open.
