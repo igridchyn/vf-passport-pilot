@@ -9,17 +9,13 @@ You are continuing the autonomous execution of the **PassportPilot validation tr
 `.autorun/LEDGER.md` is the one-line-per-item history. **Do not read it as part of an item** — `git log` has the detail if you need it.
 
 <!-- ===== CURRENT ITEM — step 11 replaces ONLY this block; change nothing else in this file ===== -->
-<!-- kind: research -->
-<!-- item: MV.1 -->
-**MV.1 — Desk-verify the build spec's open items** · lane **auto**
-- Plan: `autorun-plan show MV.1` (docs/planning/validation-plan.md).
-- Hand-off from CH.1:
-  - `docs/spec-pack.md` is not imported yet (S0 / card A-001 open). Work from the item list
-    in the plan section itself, and say in the doc that the spec's own wording was not seen.
-  - The proxy refused page fetches in R1, FD.1 and CH.1, so expect snippet-only evidence.
-    Tag accordingly. For the SP-API attributes, prefer developer-docs / GitHub
-    selling-partner-api-models search results.
-  - The manual-cost estimate must be non-vendor. R1 §3 vendor prices are not it.
+<!-- kind: default -->
+<!-- item: wait -->
+**Nothing is eligible.** Waiting on the operator: A-001, D-001, D-002, D-003, M-001. At session start run `autorun-plan card inbox`, then `autorun-plan next`; if it still says wait, write PAUSE.
+- Hand-off from MV.1: D-003 (non-blocking) is an FYI for D-002's price. If D-002 is answered
+  first, close D-003 as "keep". If the answer is "reconsider", apply it together with D-002/D-001.
+  The proxy refused all page fetches again, so the starred sources in
+  `docs/research/2_spec_open_items.md` §6 still need a full read before the build.
 <!-- ===== END CURRENT ITEM ===== -->
 
 Begin with the skill, then the reads, then the current item.
