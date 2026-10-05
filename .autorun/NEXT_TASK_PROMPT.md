@@ -10,16 +10,26 @@ You are continuing the autonomous execution of the **PassportPilot validation tr
 
 <!-- ===== CURRENT ITEM — step 11 replaces ONLY this block; change nothing else in this file ===== -->
 <!-- kind: comms -->
-<!-- item: FD.2 -->
-**FD.2 — Landing page (zh-CN + EN) and non-binding LOI, draft** · lane **comms**
-- Plan: `autorun-plan show FD.2` (docs/planning/validation-plan.md).
-- Operator's part (30 min): Review the page and LOI copy; mark changes
-- Hand-off (2026-10-05): PREREG-F is **approved** (D-002, decision log #11) and binding. The
-  page and LOI follow it exactly: the price is €249/yr for up to 10 products (§1.2), with the
-  early-access wording of §1.3, the honesty rules of §7 and the after-test notices of §10.
-  Tally is linked, not embedded. The copy must not name any partner or RP provider. Do not
-  edit PREREG-F; a change is a new card. D-003 = keep (#12): Sevarto is in R1 §3, and the copy
-  must not claim to be the only tool. D-001 is still open, and the price rests on "continue".
+<!-- item: FD.4 -->
+**FD.4 — Outreach kit: WeChat post, DM, forum post, partner pitch, follow-ups, tracker** · lane **comms**
+- Plan: `autorun-plan show FD.4` (docs/planning/validation-plan.md).
+- Operator's part (30 min): Adapt the voice and approve the kit
+- Hand-off (2026-10-06): FD.2 drafts are committed (23d9b8e) and waiting on comms card M-002.
+  Reuse their wording; do not re-derive it.
+  - The offer, price and early-access lines are in `site/en/index.html` and `site/index.html`.
+  - The zh-CN no-payment line is tied to "尚未上线 / 无法购买", never 现阶段不收取 (it reads as
+    "free for now"). Keep "whether it launches has not been decided".
+  - The pre-pay question's fixed wording is `docs/outreach/form.md` P1 (zh-CN + EN); PREREG-F
+    §3.3 says FD.4 uses it.
+  - The LOI is `docs/outreach/loi.md`.
+  - The first 1:1 message carries the offer, the price and the three qualification questions
+    (PREREG-F §2.2).
+  - Form links carry `?ch=<code>` per channel.
+  - The tracker has aggregate columns only, as in PREREG-F §4. It holds no names and lives
+    outside the repo; the repo gets a template only.
+  - Partners are named nowhere in public copy. The channel list is
+    `docs/outreach/channels.md`; M-001 is still open.
+  - Run the claims audit as a read-only subagent; it caught 2 blockers on FD.2.
 <!-- ===== END CURRENT ITEM ===== -->
 
 Begin with the skill, then the reads, then the current item.
