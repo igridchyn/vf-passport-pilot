@@ -9,24 +9,27 @@ You are continuing the autonomous execution of the **PassportPilot validation tr
 `.autorun/LEDGER.md` is the one-line-per-item history. **Do not read it as part of an item** — `git log` has the detail if you need it.
 
 <!-- ===== CURRENT ITEM — step 11 replaces ONLY this block; change nothing else in this file ===== -->
-<!-- kind: comms -->
-<!-- item: handoff:CH.2 -->
-**Hand off CH.2 — Recruit a Chinese-speaking channel partner** (the operator's own task).
-- Open the runbook card: `autorun-plan card new --type comms --task CH.2 --blocking …` with exact steps and commands. Do not do the task.
-- Plan: `autorun-plan show CH.2` (docs/planning/validation-plan.md).
-- Operator's part (180 min): Approach the picked partners with the pitch; agree a co-run in writing
-- Hand-off (2026-10-06): FD.4 is committed (21f2da3); comms card M-003 is open, and M-001 (which
-  partners to approach, and the test-C reading) is still open. Write a runbook card only.
-  - Pitch and co-run confirmation: `docs/outreach/partner-pitch.md` §1–§2. Send with the
-    confirmation: `kit.md` §2b (the introduction) and §6 (the short answers).
-  - Who to approach: `docs/outreach/channels.md` §5, wave 1, pending M-001. Overlap rows get the
-    〔overlap〕 paragraph. No RP-brokerage mention to EU-rep agents.
-  - Terms: introduce 1:1 only; no group chats; no forwarding of contact cards; no seller data;
-    no commission or outcome pay (a fee goes on a cost card first); no post-G1 promise; never
-    named in public.
-  - Record: "partner P[n] agreed on [date]" in the decision log, as an aggregate with no names.
-    Each partner gets its own `?ch=P[n]` link.
-  - Steps depend on M-001 and M-003 being answered; say so on the card.
+<!-- kind: impl -->
+<!-- item: handoff:FD.3 -->
+**Hand off FD.3 — Publish the landing page** (the operator's own task).
+- Open the runbook card: `autorun-plan card new --type act --task FD.3 --blocking …` with exact steps and commands. Do not do the task.
+- Plan: `autorun-plan show FD.3` (docs/planning/validation-plan.md).
+- Operator's part (90 min): Decide the cost items, get the zh-CN copy checked, deploy, wire the form, check it loads from China, answer with the URL
+- Hand-off (2026-10-06): CH.2 runbook card M-004 is open (blocking; CH.2 stays not done,
+  founder-owned). FD.3 is an act card only: write the runbook, do not deploy.
+  - Gates on the card: M-002 (page, form, LOI, privacy notice) approved; D-001 answered;
+    native-speaker check of every [zh-check] line (a partner from M-004 can do it free;
+    a paid reviewer is a cost card).
+  - Cost items and the free alternatives: PREREG-F §5.4 (domain ~US$10.44 first year
+    [plausible, secondary]; native review: quote needed). Hosting: PREREG-F §5.2 recommends
+    Cloudflare Pages + custom domain (default subdomains reported blocked in China; Netlify
+    custom domain as fallback). Operator identity (imprint, privacy) placeholders:
+    `site/index.html:14`.
+  - Form wiring: Tally hidden field `ch` (PREREG-F §5.1; `kit.md` §5 codes); the page's own
+    button carries `web`. Fill {{FORM_URL}}/{{PAGE_URL}} placeholders listed in `site/` and
+    `docs/outreach/`.
+  - China load check by a partner or a mainland test; answer with the public URL only
+    (no account details, no secrets).
 <!-- ===== END CURRENT ITEM ===== -->
 
 Begin with the skill, then the reads, then the current item.
