@@ -214,6 +214,13 @@ and do not imply a seller faces the DSA fine.
   €349 (2), €690 (6), €1,790 (16); bundled with IOSS and UK VAT. Cited in Chinese trade-portal
   coverage. ([pricing](https://easproject.com/pricing/), [CN site](https://easproject.com/cn/))
   [vendor claim]
+- **Sevarto** (Germany), found after this refresh (MV.1, 2026-10-05; decision log #10, #12):
+  sells **generated drafts** of the GPSR Art. 19 listing information with warnings **in
+  German**, and a risk-analysis PDF per product; the seller approves each draft. One-off per
+  order: **€99 net for up to 10 products**, €199 net for up to 30, €399 net for up to 100. No
+  Chinese interface and no other EU languages seen. Detail in
+  `docs/research/2_spec_open_items.md` §4.1.
+  ([pricing](https://sevarto.de/pricing), undated, snippet-read 2026-10-05) [vendor claim]
 - **Complir** (Copenhagen): $11M seed (Sep 2026) for AI product-compliance monitoring per SKU.
   It sells to retailers and brands, not marketplace SMEs. Signals that investors are funding
   the category.

@@ -226,3 +226,27 @@ Majors:
 
 Minors (tags, a source for the fee postponement, wording of the price comparison, the card's
 readability, this count): all were fixed. Nothing remains open.
+
+**#11 — PREREG-F approved; test price €249/yr for up to 10 products** *(founder, card D-002;
+price delegated to Claude)*. On 2026-10-05 the founder answered D-002 "A". They approved the
+PREREG-F rules as drafted (offer, qualified seller, reached, LOI and pre-pay-intent
+definitions, voids, tools, data handling, honesty rules) and delegated the price choice.
+Claude chose option A: **€249/yr for up to 10 products**. It sits inside the €150–300/yr band
+and away from both ends, so a PASS or FAIL is not an artefact of testing the band's edge. It
+is also consistent with D-003 = keep (#12). `docs/planning/PREREG-F-fake-door.md` is now
+**approved** and binding; only its status lines and the price rows were changed (option A
+marked chosen). No rule, definition, bar or window changed. It rests on "continue" on card
+D-001, which is still open: if the founder answers D-001 "adjust" with a band that excludes
+€249, the price changes through a new card before the first outreach. Costs stay unspent and
+go to the founder at FD.3 (domain about US$10–11/yr; zh-CN review and legal review on quote).
+FD.1 is done; FD.2 (landing page and LOI drafts) is unblocked. Serves test D (and C through
+the per-channel counts).
+
+**#12 — Sevarto noted; price kept** *(founder, card D-003)*. The founder answered D-003
+"keep" with the note to record Sevarto as a competitor. Sevarto (DE) sells generated GPSR drafts
+(German warnings, risk-analysis PDF) from €99 net per order for up to 10 products ([vendor
+claim], snippet-read, #10). It is added to R1 §3 (`docs/research/1_feasibility_refresh.md`).
+The positioning stays as R1 states it: generating documents is not the wedge. The wedge is
+Chinese input, output in several EU languages and the China channel, none of which was seen
+at Sevarto. PREREG-F §4's "reason for no" and "current provider and price paid" fields are
+where a cheaper rival would show up in the test. Serves test D.

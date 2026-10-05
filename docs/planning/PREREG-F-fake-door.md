@@ -1,8 +1,11 @@
 # PREREG-F-fake-door.md — Fake-door pre-registration for test D
 
-Date: 2026-10-05. **Status: proposed.** Becomes binding when the founder approves it on
-card D-002. After approval this file is protected: any change is a new card and, after the
-first outreach goes out, a new test (`decisive-test.md`). Task FD.1
+Date: 2026-10-05. **Status: approved** on card D-002 (2026-10-05). The founder approved the
+rules as drafted and delegated the price choice to Claude, who chose option A (§1.2). Card
+D-003 (Sevarto, a cheaper German-language generator) was answered "keep" at the same
+time, so the choice was made with it in view (decision log #10–#12). Binding from that date. This file
+is protected: any change is a new card and, after the first outreach goes out, a new test
+(`decisive-test.md`). Task FD.1
 (`docs/planning/validation-plan.md`). Serves test **D**, and test **C** through the
 per-channel counts.
 
@@ -13,9 +16,10 @@ offer and its price, who counts as qualified and as reached, what counts as an L
 pre-pay intent, how the founder counts, which tools are used, and how the data is handled.
 None of this changes the bar, the window or the gate table.
 
-**Provisional.** This draft follows the "continue" recommendation on card D-001 (the R1
-refresh). If the founder answers D-001 with "adjust" and a new band, the price in §1.2 must
-move inside that band before this file is approved.
+**Rests on D-001.** Approved while card D-001 (the R1 refresh: continue / adjust / stop) was
+still open; it assumes "continue" and the €150–300/yr band. If the founder answers D-001
+"adjust" with a band that excludes €249, the price in §1.2 changes through a new card before
+the first outreach.
 
 **Sources.** External facts were checked on 2026-10-05 by web search. As in R1, the session
 could read only search-result snippets, not full pages. Tags: [established] = official or
@@ -25,10 +29,10 @@ the form from mainland China), which matters more than any source.
 
 ## 0. Summary for the card
 
-| Item | Proposed |
+| Item | Approved |
 |---|---|
 | Offer | GPSR document pack (risk analysis, technical file, multilingual warnings, listing safety blocks) for textiles, furniture and jewellery. Chinese input, EU-language output. The seller reviews and attests. No Responsible-Person (RP) service: RP providers are introduced, priced by them. In development; early access; no payment now. |
-| Price | **€249/yr for up to 10 products** (option A, recommended). Alternatives B: €199/yr for up to 5; C: €290/yr for up to 25. |
+| Price | **€249/yr for up to 10 products** (option A, chosen on card D-002). Not chosen: B, €199/yr for up to 5; C, €290/yr for up to 25. |
 | Qualified seller | Self-declared: sells on an EU marketplace or ships to EU consumers; at least one product in a launch category; owns the business or decides on compliance purchases. |
 | Reached | A seller who was shown the offer **with its price** (1:1 or on the form) and then answered the qualification questions as qualified. Group posts do not count until someone responds. The bar is therefore conditional on a qualifying response; the funnel above it is logged too. |
 | Counts toward D | A non-binding LOI **or** pre-pay intent, each confirmed in writing in a 1:1 channel (a form signature or tick alone never counts). One per seller business, de-duplicated by shop name. |
@@ -89,7 +93,7 @@ product model; it is checked against the spec and the regulation at E0.1.
 
 | Option | Price shown | Per product | Against the market (R1 §3, [vendor claim]) |
 |---|---|---|---|
-| **A (recommended)** | **€249/yr for up to 10 products** | €24.90 | Inside the band, away from both ends (66% of the way from €150 to €300). Below EUProof Pro (€390/yr, 10 products, €39 each), above EUProof Scale (€890/yr, 50 products, about €18 each). Above EAS's €199 RP bundle for 1 product type. |
+| **A (chosen, D-002)** | **€249/yr for up to 10 products** | €24.90 | Inside the band, away from both ends (66% of the way from €150 to €300). Below EUProof Pro (€390/yr, 10 products, €39 each), above EUProof Scale (€890/yr, 50 products, about €18 each). Above EAS's €199 RP bundle for 1 product type. |
 | B | €199/yr for up to 5 products | €39.80 | Near the €190–199 competitor entry prices. A PASS would say less about the upper half of the band. |
 | C | €290/yr for up to 25 products | €11.60 | Top of the band, generous scope. Tests willingness to pay the ceiling, but large-catalogue sellers may read it as cheap and small ones as dear. |
 
