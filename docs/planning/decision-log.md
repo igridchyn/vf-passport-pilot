@@ -250,3 +250,56 @@ The positioning stays as R1 states it: generating documents is not the wedge. Th
 Chinese input, output in several EU languages and the China channel, none of which was seen
 at Sevarto. PREREG-F §4's "reason for no" and "current provider and price paid" fields are
 where a cheaper rival would show up in the test. Serves test D.
+
+**#13 — FD.2 landing page, privacy notice, form copy and LOI drafted; comms card for review**
+*(delegated; comms lane)*. On 2026-10-05/06 the loop drafted the public texts test D needs
+before FD.3. Nothing is published or sent.
+- `site/`: `index.html` (zh-CN) and `en/index.html`; `privacy.html` and `en/privacy.html`;
+  `imprint.html` (bilingual placeholder); `style.css`. It is plain HTML and CSS, with no JS,
+  no web fonts, no trackers, and the Tally form linked through a `{{FORM_URL}}` placeholder.
+- `docs/outreach/`: `loi.md`, `form.md` (Tally copy, screens 1–6) and
+  `after-test-notices.md` (PREREG-F §10).
+- `docs/research/3_gpsr_copy_sources.md`: sources for the legal statements.
+
+The privacy notice lives in `site/`, the published form, not as a second copy in
+`docs/outreach/`, so the two cannot drift.
+
+Choices and deviations, all inside approved PREREG-F, which was not edited:
+1. **GPSR statements limited to what §1.1 allows.** The page says only that GPSR has applied
+   since 13 Dec 2024, that major EU marketplaces ask for product-safety information, and,
+   under "what it is not", the Art. 16(1) point. A fuller paragraph (Art. 9(2), 9(7), 19)
+   was drafted, then cut after the claims audit. No article number appears in the copy,
+   because EUR-Lex could not be opened (proxy) and every number is only [plausible].
+2. **Consent tick T1 finalised** (§6.5 left the wording to FD.2). The zh-CN text no longer
+   reads as "free". The purpose "ask me to confirm any LOI or pre-pay answer" is added,
+   because §3.2–§3.3 require that follow-up.
+3. **"No payment now" is tied to "not available / cannot be bought yet"** in every zh-CN line.
+   This avoids the 现阶段免费 ("free for now") reading. 抢先体验 is glossed as access at
+   launch.
+4. **Launch not promised.** "Whether it launches has not been decided" sits beside §1.3's
+   "launch date not fixed".
+5. **The form adds Q4, business type,** so that a provider, agent or lab declares itself.
+   This is a §2.1 exclusion, applied to everyone alike. The pre-pay question P1 is on the
+   form and counts only as unconfirmed interest (§3.3).
+6. **No Chinese-speaking contact is promised** (CH.2 has no partner yet). No partner or RP
+   provider is named.
+
+Claims audit (independent read-only subagent, rubric `/claims-audit`):
+- Round 1: 2 BLOCKER, 6 MAJOR, 15 MINOR. The blockers were the status line missing on form
+  screens 2–5 and the imprint not offering early access.
+- Round 2: 0 BLOCKER, 0 MAJOR, 7 MINOR.
+- All were fixed. Nothing open in the copy.
+
+`/simplify` and `/code-review` were not run: the diff is copy and static markup, so the
+claims audit was the review. The visual preview was not done, because the browser tool
+blocks `file:` URLs and the headless loop cannot run a local server. The founder previews
+the page at FD.3.
+
+**Pre-publish gates (FD.3, founder):**
+- fill `{{FORM_URL}}`, `{{PAGE_URL}}`, `{{CONTACT}}`, the operator identity, the hosting
+  and e-mail providers, the supervisory authority and the D3 yuan edges;
+- settle the GDPR transfer safeguard in privacy §5 (placeholder; optional legal review);
+- open EUR-Lex and confirm L1, L5 and the marketplace statement;
+- have a native speaker check every zh-check line.
+
+Serves test D.
