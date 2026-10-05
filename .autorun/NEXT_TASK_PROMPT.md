@@ -9,16 +9,17 @@ You are continuing the autonomous execution of the **PassportPilot validation tr
 `.autorun/LEDGER.md` is the one-line-per-item history. **Do not read it as part of an item** — `git log` has the detail if you need it.
 
 <!-- ===== CURRENT ITEM — step 11 replaces ONLY this block; change nothing else in this file ===== -->
-<!-- kind: design -->
-<!-- item: card:D-002 -->
-**Apply card D-002 — Approve PREREG-F: fake-door price and rules** (task FD.1).
-- The operator answered: **A** — Founder approves the PREREG-F rules as drafted and delegated the price choice to Claude, who picks A: EUR 249/yr for up to 10 products (mid-band, so a PASS or FAIL is not an artefact of the band's edge; consistent with D-003 = keep). Mark PREREG-F approved.
-- Read `.autorun/attention/D-002.md`, carry the answer out (autorun:item, *Cards*), then `autorun-plan card close D-002`.
-- Operator (2026-10-05): this block names card:D-002 directly because a session that starts on
-  `wait` does not get the card task's allow_paths from the gate (LESSONS.md, 2026-10-05).
-  D-003 is answered too (keep); apply it here or as the next item.
-  The proxy refused all page fetches again, so the starred sources in
-  `docs/research/2_spec_open_items.md` §6 still need a full read before the build.
+<!-- kind: comms -->
+<!-- item: FD.2 -->
+**FD.2 — Landing page (zh-CN + EN) and non-binding LOI, draft** · lane **comms**
+- Plan: `autorun-plan show FD.2` (docs/planning/validation-plan.md).
+- Operator's part (30 min): Review the page and LOI copy; mark changes
+- Hand-off (2026-10-05): PREREG-F is **approved** (D-002, decision log #11) and binding. The
+  page and LOI follow it exactly: the price is €249/yr for up to 10 products (§1.2), with the
+  early-access wording of §1.3, the honesty rules of §7 and the after-test notices of §10.
+  Tally is linked, not embedded. The copy must not name any partner or RP provider. Do not
+  edit PREREG-F; a change is a new card. D-003 = keep (#12): Sevarto is in R1 §3, and the copy
+  must not claim to be the only tool. D-001 is still open, and the price rests on "continue".
 <!-- ===== END CURRENT ITEM ===== -->
 
 Begin with the skill, then the reads, then the current item.
