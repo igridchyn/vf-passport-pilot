@@ -371,3 +371,27 @@ Claims audit (`/claims-audit`, run by an independent read-only subagent):
   the review.
 
 Serves tests D and C.
+
+**#15 — FD.3 hand-off: runbook card A-002 opened (blocking; a read-only skeptic raised 14 points, all fixed in the card)** *(delegated; act lane)*. FD.3 is
+the founder's own task, so the loop wrote the runbook and did nothing else: nothing was bought,
+registered, deployed or sent. FD.3 is **not done**; it closes when the founder answers A-002
+(`done|hold`).
+- Gates on the card: M-002 approved, D-001 answered, and the EUR-Lex check of L1, L5 and the
+  marketplace statement (`docs/research/3_gpsr_copy_sources.md`). The native-speaker check of the
+  `zh-check` lines comes after the founder fills the text (card step 7), by a trusted speaker or
+  a partner that does not sell EU-representative services (M-004 step 3); a paid reviewer is a
+  cost card.
+- Cost items, with the free alternative for each (PREREG-F §5.4): domain about US$10.44 first
+  year [plausible, secondary]; native and legal review: quote needed. Hosting and form are free
+  tiers (Cloudflare Pages, Tally).
+- Decision: the operator identity (imprint, privacy), the role e-mail address and the GDPR
+  transfer safeguard are filled only in a **deploy copy outside the repo**; `site/` keeps its
+  placeholders (hard rule 2; `scripts/check.sh` rejects e-mail addresses). After the answer the
+  loop fills only the public `{{FORM_URL}}` / `{{PAGE_URL}}` placeholders.
+- The Cloudflare project is created by direct upload of that copy, never connected to the
+  private repo; Web Analytics stays off.
+- The China check covers the page, privacy and imprint, and the form, from a WeChat chat and a
+  browser; a form that fails there triggers PREREG-F §5.3's fallback on a separate card.
+- Open founder cards: A-001, A-002, D-001, M-001, M-002, M-003, M-004.
+
+Serves test D (and test C: the partner confirmation in M-004 needs these links).
