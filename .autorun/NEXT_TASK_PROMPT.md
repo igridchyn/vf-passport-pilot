@@ -11,21 +11,19 @@ You are continuing the autonomous execution of the **PassportPilot validation tr
 <!-- ===== CURRENT ITEM — step 11 replaces ONLY this block; change nothing else in this file ===== -->
 <!-- kind: impl -->
 <!-- item: wait -->
-**Nothing is eligible.** Waiting on the operator: A-002, D-001, M-001, M-002, M-003, M-004, M-005, M-006. At session start run `autorun-plan card inbox`, then `autorun-plan next`; if it still says wait, write PAUSE.
-- Hand-off from FD.3b (decision log #20): the publish kit is committed (121c94e).
-  - The kit: `scripts/make-deploy-copy.sh` (smoke test `scripts/test-make-deploy-copy.sh`),
-    `docs/outreach/tally-paste.md` and `docs/outreach/privacy-safeguard-options.md`.
-  - A-002 now points to the kit in steps 1, 3, 4, 6 and 7. A-002 stays open and blocking.
-  - **Applying M-006:** log the founder's privacy §5 choice (A / B / C / D / D+A / D+B) in
-    the decision log.
-    - B: draft tick T3 + the first-message line into `form.md`, `tally-paste.md` and the
-      FD.4 kit on a comms card.
-    - C: open a PREREG-F change card (protected file).
-    - Never write the founder's providers or identity details into `site/`.
-  - **Applying M-002** (if it edits `form.md` or `loi.md`): regenerate `tally-paste.md` in
-    the same change (sections C and D), and re-check it line by line against both files.
+**Nothing is eligible.** Waiting on the operator: A-002, M-001, M-003, M-004, M-005, M-007. At session start run `autorun-plan card inbox`, then `autorun-plan next`; if it still says wait, write PAUSE.
+- Hand-off from the D-001 / M-002 / M-006 session (decision log #21): all three are applied
+  and closed; privacy §5 = paragraph H + option D + option B (chosen by Claude on the founder's
+  delegation; the founder confirms on A-002).
+  - New comms card **M-007** (non-blocking, but a fourth gate on A-002): T3 in `form.md` and
+    `tally-paste.md`, the WeChat consent message in `kit.md` §2a and rule 15.
+  - **Applying M-007:** `approve` closes it. `changes` means edit `form.md`, then regenerate
+    `tally-paste.md` (T3 block, setup checklist and zh extract) and re-check it against `form.md`,
+    then `kit.md` §2a. `hold` opens a cost card for a legal review.
+  - **Applying M-003** (if it edits `kit.md`): keep rule 15 and §2a consistent with M-007.
   - **Applying A-002** (`done`): as in decision #15. If the ECB rate used is not dated the
-    publication day, log it as a deviation from PREREG-F §4 (decision #20).
+    publication day, log it as a deviation from PREREG-F §4 (decision #20). If the founder
+    changes the §5 choice, redraft T3 and §2a on a new card.
   - The textile/jewellery scope question (#19) stays with E0.1.
 <!-- ===== END CURRENT ITEM ===== -->
 
