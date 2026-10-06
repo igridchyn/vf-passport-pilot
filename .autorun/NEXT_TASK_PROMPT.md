@@ -9,17 +9,16 @@ You are continuing the autonomous execution of the **PassportPilot validation tr
 `.autorun/LEDGER.md` is the one-line-per-item history. **Do not read it as part of an item** — `git log` has the detail if you need it.
 
 <!-- ===== CURRENT ITEM — step 11 replaces ONLY this block; change nothing else in this file ===== -->
-<!-- kind: research -->
-<!-- item: FD.3a -->
-**FD.3a — EUR-Lex check of the page's GPSR claims (A-002 gate 3)** · lane **auto**
-- Plan: `autorun-plan show FD.3a` (docs/planning/validation-plan.md).
-- Queued by the founder (2026-10-06, decision log #18): FD.3a then FD.3b prepare A-002 (EUR-Lex
-  gate 3, then the publish kit). Neither deploys, buys or contacts anything; A-002 stays open
-  and blocking, FD.3 stays founder-owned.
-- Applying A-002 (`done`) later: log the URLs, check result and ECB rate in the decision log;
-  fill `{{FORM_URL}}` in `site/` and `{{PAGE_URL}}`/`{{FORM_URL}}` in `docs/outreach/` (public
-  addresses only; never the founder's identity details or e-mail); apply the reviewer's listed
-  corrections; `autorun-plan card close A-002 --done-task`.
+<!-- kind: comms -->
+<!-- item: FD.3b -->
+**FD.3b — Publish kit: deploy-copy script, Tally paste text, safeguard drafts** · lane **comms**
+- Plan: `autorun-plan show FD.3b` (docs/planning/validation-plan.md).
+- Hand-off from FD.3a (decision log #19): L1 and the marketplace statement are confirmed
+  against the OJ text. L5 was reworded in `site/` ("What PassportPilot is not", now with an
+  Art. 2(1) limit and a 2019/1020 Art. 4 link), and comms card M-005 (non-blocking) asks the
+  founder to approve it. A-002's gate 3 counts as met only once M-005 is approved. The deploy
+  copy must take the current `site/`, and the Tally text must not restate L5 in its old form.
+  Leave the textile/jewellery scope question (decision #19) to E0.1. Do not put it in public copy.
 <!-- ===== END CURRENT ITEM ===== -->
 
 Begin with the skill, then the reads, then the current item.
