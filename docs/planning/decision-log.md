@@ -458,3 +458,62 @@ wording; the card says so and offers the founder a browser check of EUR-Lex.
   diff is copy and research only.
 
 Serves test D.
+
+**#20 — FD.3b: publish kit for A-002 (deploy-copy script, Tally paste text, §5 safeguard drafts) (2026-10-06)** *(delegated; comms lane, card M-006)*.
+Nothing was deployed, bought, registered or sent, and no identity data was handled.
+- **`scripts/make-deploy-copy.sh <new folder> [--form-url URL]`.** It refuses a target inside
+  the repo. That check runs on the resolved path and again by inode, so it also catches
+  symlinks and case-insensitive disks. It also refuses a folder that already has files, so a
+  filled copy is never overwritten. It copies the tracked files of `site/` (FD.3a's L5 text
+  included) and strips only the `zh-check` / `DRAFT` / `FD.3` comments (109 today, 0 others
+  left). It lists the placeholders with file:line and prints a step-6 `diff -r` against a fresh
+  copy, so only the founder's fills show. `scripts/test-make-deploy-copy.sh` is its smoke test
+  (refusals, comment strip checked against an independent implementation, form fill, the
+  step-6 diff). **Deviation:** the plan says "covered by `bash scripts/check.sh`".
+  `scripts/check.sh` is protected and FD.3b has no allow path, so the smoke test is not wired
+  into it. check.sh does cover the new files' e-mail and penalty tripwires. Wiring is one line
+  for the founder: `bash scripts/test-make-deploy-copy.sh`.
+- **`docs/outreach/tally-paste.md`.** It carries the text of `form.md` and `loi.md`
+  verbatim, checked by script line by line and option by option, and adds no public text. The
+  setup checklist adds two things beyond `form.md`, both stricter:
+  - e-mail notifications to the founder stay off, because privacy §4/§5 name the e-mail
+    provider only for direct conversations;
+  - T1's "required only if C2 is filled" uses Tally's "make answers required" action.
+  Q6 keeps "none yet", so non-sellers can still finish (no branching).
+- **D3 yen edges.** The worked example uses the ECB rate of 5 Oct 2026, 7.5118 CNY/EUR
+  [established, ECB daily XML]: ¥1,100 / ¥2,300, rounded to the nearest ¥100. It is an example
+  only. **Clarification of PREREG-F §4:** the founder publishes after that day's ECB rate
+  appears. If that is not possible, the latest rate is used and logged as a deviation when the
+  A-002 answer is applied.
+- **`docs/outreach/privacy-safeguard-options.md`.** GDPR read from OJ L 119 (Arts 13(1)(f),
+  44, 45, 46(2)(c), 49, Recital 111). The draft has paragraph H (hosting and e-mail: SCCs or
+  the DPF) and four WeChat options:
+  - A: Art. 49(1)(b);
+  - B: Art. 49(1)(a), explicit consent, needing a new form tick T3 and a first-message line,
+    both drafted;
+  - C: no WeChat, needing a PREREG-F change;
+  - D: WeChat's own SCCs.
+  **New fact:** WeChat's privacy policy (updated 2026-08-06, [vendor claim]) names Tencent
+  International Service Europe B.V. (NL) as the controller for EEA users. It stores data in
+  Singapore and Malaysia, shares messages with Weixin users in mainland China, and relies on
+  SCCs for those transfers. Whether that covers the founder's own use is open [plausible]. No
+  option is recommended: the choice is legal and the founder's.
+- **Card A-002** (open, blocking): steps 1, 3, 4, 6 and 7 now point to the kit. Gate 3 now
+  says the loop did the check and the gate is met once M-005 is approved. **Fixed:** step 3's
+  placeholder counts were wrong (6 / 9; actual 8 in each privacy notice).
+- **Quality gate.**
+  - Round 1: an independent claims audit raised 4 MAJOR and 8 MINOR points, all fixed.
+    Among them: unsourced WeChat claims, Recital 111 put on the wrong option, a legal ranking,
+    and the notification gap. A code review of the scripts raised 3 medium points (CDPATH,
+    case-insensitive paths, a vacuous diff test) and 3 low ones, all fixed.
+  - Round 2 (one auditor, all three files): 3 MAJOR and 8 MINOR points, all fixed in this
+    item. They were Option C's edit list (the landing page also offers WeChat), Option D's
+    missing copy route (WeChat's policy offers a copy-request form), the W quote's cuts, the
+    EEA test ("located in", not "registered"), the risk clause in B's first-message line, the
+    Weixin wording, the recital in the source line, CDPATH in the test, `\s` in BSD grep, and a
+    deleted tracked file leaving a half copy. The GATE_ROUNDS limit (2) is reached; the fixes
+    were not audited again.
+- **Not done here:** the textile/jewellery scope question (#19) stays with E0.1. Option B's T3
+  tick, if chosen, changes `form.md` under M-002, and `tally-paste.md` is regenerated with it.
+
+Serves test D.
