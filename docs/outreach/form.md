@@ -124,8 +124,8 @@ entirely optional."
 **T3 added (decision log #21).** Card M-006 chose option B of
 `privacy-safeguard-options.md` for transfers through WeChat: the seller's explicit consent
 under GDPR Art. 49(1)(a), given after being told the risks. T3 is that consent for a seller
-who gives a WeChat ID on this form; the same consent is asked in the first WeChat message to
-a seller who wrote first (`kit.md` §2a). The risk text is the text of privacy notice section
+who gives a WeChat ID on this form; the same consent is asked by a paragraph in the first WeChat
+message to a seller who wrote first (`kit.md` §2a). The risk text is the text of privacy notice section
 5, option B. A seller who gives e-mail or phone needs no T3. T3 is not part of PREREG-F §6.5's
 two ticks, and no bar or number depends on it (§6.1: contact is optional and one channel).
 

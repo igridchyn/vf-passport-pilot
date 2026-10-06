@@ -531,7 +531,7 @@ Serves test D.
   note:
   - B over A: a four-week campaign with 50+ sellers is hard to call "occasional" (Recital 111),
     which A depends on. B rests on the text of Art. 49(1)(a) and costs one form tick (T3) and one
-    consent message on WeChat.
+    consent paragraph in the first WeChat message.
   - Not C: it changes the approved PREREG-F and would likely cut replies.
   - Not D alone: it describes WeChat's safeguard, not ours. D is kept as the description.
   - Not legal advice. A paid legal review before scaling beyond the test stays an optional cost
@@ -542,15 +542,18 @@ Serves test D.
     "§5" read as the privacy notice's section 5. A seller who will not tick it chooses another
     contact type or "no contact"; the form still submits. This is a second condition on screen 4
     beside C2, not branching on qualification.
-  - `kit.md`: rule 15 and new §2a, the WeChat consent message sent alone as the first reply on
-    WeChat (it carries the in-development line and the privacy link, rule 1 and 6), with what to
-    do on "同意", on no "同意", on no reply and on a withdrawal; §2 and §2b point to it; the form
-    route (T3) needs no consent message.
+  - `kit.md`: rule 15 and new §2a, a consent paragraph inserted in the standard first message
+    on WeChat, after the price paragraph and before the questions, with what to do on "同意",
+    on answers without "同意", on no reply and on a withdrawal; §2 and §2b point to it; the form
+    route (T3) needs no paragraph. **PREREG-F §2.2 is kept as approved:** the first 1:1 message
+    still carries the offer, the price and the questions. The first draft sent a consent message
+    alone before the standard message; the independent verifier showed that conflicts with §2.2
+    and the funnel count, so it was changed to a paragraph inside the message.
   - Nothing of the founder's providers or identity goes into `site/`; section 5 is still filled
     in the deploy copy only. The options file records the choice.
   - **Open point for M-007:** a seller whose first WeChat message already contains answers has sent
-    data before consenting. The kit counts it under the §2 tracker rules and stops the
-    conversation on WeChat until "同意"; whether that is enough is for the founder or a legal review.
+    data before consenting. The kit takes no answer from a reply without "同意" and stops the
+    conversation on WeChat until it has one; whether that is enough is for the founder or a legal review.
     (EDPB Guidelines 05/2021 were not read: data a seller sends you directly may not be a transfer
     by you at all [plausible].)
 - **M-006's two MINOR points fixed:** the card now says the round-2 fixes of #20 were not
@@ -572,3 +575,10 @@ Serves test D.
   script change is 6 lines and its smoke test passes. T3's text in `tally-paste.md` is checked equal to `form.md`.
 
 Serves test D.
+
+Verifier follow-up on #21 (2 BLOCKER, fixed): (1) the consent message sent alone conflicted with
+PREREG-F §2.2, so it is now a paragraph inside the standard first message (above); the earlier
+claim that "no PREREG-F text is touched" is replaced by this statement. (2) Card M-007 quoted T3
+and the consent text from before the audit fix; it now quotes the final texts from `form.md` and
+`kit.md`. The one-line "A seller's answers are taken only from a reply that says 同意" rule is
+new in this change and was not claims-audited again.

@@ -69,14 +69,15 @@ speaker's check and is marked [zh-check]; the English is the reference for meani
     window ends, keep sending FU2 and FU3 to sellers among the 50; sellers numbered after the
     50 get the same messages, and their signals are counted apart.
 14. **Partner-adapted texts** get your approval only if they still meet rules 1–6.
-15. **WeChat needs the seller's consent first (decision log #21).** The first reply on WeChat
-    to a seller who wrote or added you is the consent message of §2a, alone: no offer, no
-    price, no questions until the seller answers "同意". A seller who ticked T3 on the form has
-    already consented; send §2 or FU3 to them directly. Keep the record of who consented in
-    your own files, never in the repo. Whoever withdraws gets one WeChat reply confirming it
-    (§2a) and no other WeChat message after that; reach them by e-mail or the form only if
-    they have given that. (Option B of
-    `privacy-safeguard-options.md`; not legal advice.)
+15. **WeChat needs the seller's consent (decision log #21).** On WeChat the first 1:1 message
+    is still the standard text of §2, with the offer, the price and the questions in it
+    (PREREG-F §2.2), plus the consent paragraph of §2a placed before the questions. Take a
+    seller's answers on WeChat only from a reply that says "同意". A seller who ticked T3 on the
+    form has already consented; send §2 or FU3 to them without that paragraph. Keep the record
+    of who consented in your own files, never in the repo. Whoever withdraws gets one WeChat
+    reply confirming it (§2a) and no other WeChat message after that; reach them by e-mail or
+    the form only if they have given that. (Option B of `privacy-safeguard-options.md`; not
+    legal advice.)
 
 **Placeholders** (founder, at FD.3 / FD.5): `{{FORM_URL}}`, `{{PAGE_URL}}`, `{{CONTACT}}`
 (the role address, as in `form.md`), `{{FOUNDER_WECHAT}}` (only in a partner's introduction,
@@ -154,9 +155,10 @@ link: the partner's code (`P1` …) for a seller a partner introduced; the group
 code (`WG1` …, `BB1` …) for a seller who wrote after a post; `DM` for a seller who wrote to you
 in any other way.
 
-**On WeChat, §2a goes first.** Send this message there only after the seller has answered
-"同意" to the consent message (rule 15). On e-mail, in a forum thread or by any other route,
-send it as it stands.
+**On WeChat, add the consent paragraph of §2a** (rule 15) after the price paragraph, before the
+questions. The message is otherwise unchanged, so the price and the questions reach every
+seller in the same first message (PREREG-F §2.2). On e-mail, in a forum thread or by any other
+route, send it as it stands.
 
 **No cold messages in this test (hard rule 1, PREREG-F §6.2, §6.4).** Send the first
 message only to a seller who wrote to you or added you themselves (after a post, the page or
@@ -236,20 +238,20 @@ answers (§2.3). If an answer is missing, ask only for that one (FU1b).
 channel; 2 names at least one of the three categories; 3 is yes; 4 is "seller"; 5 is
 answered. A provider, agent or lab is not qualified, whatever else they answer (PREREG-F §2.1).
 
-### 2a. WeChat consent message (first reply on WeChat; GDPR Art. 49(1)(a))
+### 2a. WeChat consent paragraph (inserted in §2 on WeChat; GDPR Art. 49(1)(a))
 
-Privacy notice section 5 (option B, once the founder has filled it in) says WeChat is used with a seller only if the seller explicitly
-agrees to the transfer outside the EEA, on the form (T3) or by replying "同意" to this
-message. So this is the **first reply** on WeChat, whoever wrote first, and it is sent
-**alone**. Fill `[code]` as in §2. It carries the in-development line (rule 1) and the privacy
-link (rule 6), and it asks nothing else.
-- **"同意" arrives:** note it in your own consent record, then send §2 (you may drop its
-  greeting line).
-- **A reply without "同意"** (for example answers to the questions): do not discuss the offer
-  on WeChat. Send this message once more; if there is still no "同意", use the form or
-  nothing. What the seller already wrote stays under the tracker rules of §2; do not pass it
-  on or reuse it in any way beyond the count.
-- **No reply:** nothing more. This message is not a reminder and FU1 does not follow it.
+Privacy notice section 5 (option B, once the founder has filled it in) says WeChat is used with
+a seller only if the seller explicitly agrees to the transfer outside the EEA, on the form (T3)
+or by writing "同意" in a WeChat reply. This paragraph is that request. On WeChat, put it in the
+standard first message (§2) after the price paragraph and before "If you are willing, please
+answer these questions"; nothing else in §2 changes, so PREREG-F §2.2 is kept as approved. It
+sits beside the in-development line and the privacy link that §2 already carries.
+- **A reply with "同意":** note the consent in your own record; its answers count as in §2.
+- **Answers without "同意":** take no answer from it and do not discuss the offer further on
+  WeChat. Send the paragraph once more, alone with the status line (rule 1); if there is still
+  no "同意", use the form or nothing. The tracker rules of §2 apply to what was already
+  received only for the count; do not pass it on or reuse it.
+- **No reply:** nothing more. FU1 (one reminder) is allowed as for any first message.
 - **"不同意", or a withdrawal later:** reply once, in the thread, that you will not use WeChat
   with them further, ending with FU7's short status line; that is the last WeChat message.
 - The form route needs none of this: a seller who ticked T3 has consented (`form.md`), and
@@ -257,28 +259,18 @@ link (rule 6), and it asks nothing else.
 
 **zh-CN** [zh-check]
 
-> 您好！我是 PassportPilot 的创始人，在欧盟。〔这条消息借助翻译工具写成，欢迎用中文回复。〕 [zh-check]
->
-> PassportPilot 仍在开发中，尚未上线，现在无法购买，也不收取任何款项；登记可在上线时获得抢先体验。 [zh-check]
->
-> 如您同意通过微信沟通（您的信息会因此传输到欧洲经济区以外：欧盟委员会未就这些国家或地区作出充分性决定，我们自己也没有与微信运营方订立保障措施，您的信息可能得不到与欧盟同等的保护，详见隐私说明第 5 节：{{PAGE_URL}}/privacy.html ），请回复“同意”。您可以随时撤回同意；之后我只会回复一条确认消息，不再通过微信与您联系。您也可以不使用微信，改为填写登记表：{{FORM_URL}}?ch=[code] 。如果不感兴趣，无需回复，我不会再联系您。 [zh-check]
+> 如您同意通过微信沟通（您的信息会因此传输到欧洲经济区以外：欧盟委员会未就这些国家或地区作出充分性决定，我们自己也没有与微信运营方订立保障措施，您的信息可能得不到与欧盟同等的保护，详见隐私说明第 5 节：{{PAGE_URL}}/privacy.html ），请在回复中写明“同意”，并可在同一条回复中回答下面的问题。您可以随时撤回同意；之后我只会回复一条确认消息，不再通过微信与您联系。您也可以不使用微信，改为填写登记表（见下）。 [zh-check]
 
 **EN**
 
-> Hello! I am the founder of PassportPilot, based in the EU.
-> 〔This message was written with a translation tool; replies in Chinese are welcome.〕
->
-> PassportPilot is in development and not available yet, so it cannot be bought, and no
-> payment is taken now; signing up gives early access when it launches.
->
 > If you agree to talk on WeChat (your information is then transferred outside the European
 > Economic Area, where the European Commission has not found the protection adequate and we
 > have no safeguard of our own with the WeChat operator, so your information may not be
 > protected to the EU standard; see section 5 of the privacy notice:
-> {{PAGE_URL}}/en/privacy.html ), please reply "同意" (agree). You can withdraw your consent
-> at any time; I will then stop using WeChat with you, apart from one reply to confirm. You can also skip
-> WeChat and fill in the sign-up form instead: {{FORM_URL}}?ch=[code] . If you are not
-> interested, you do not need to reply, and I will not contact you again.
+> {{PAGE_URL}}/en/privacy.html ), please write "同意" (agree) in your reply, and you can answer
+> the questions below in the same reply. You can withdraw your consent at any time; I will then
+> stop using WeChat with you, apart from one reply to confirm. You can also skip WeChat and fill
+> in the sign-up form instead (below).
 
 ### 2b. Partner's introduction (sent by the partner, in its own voice)
 
@@ -331,8 +323,8 @@ founder's contact. It receives no answers. Replace `P1` with the partner's code.
 A seller who writes to the founder after this introduction gets the standard first message
 (§2) with the partner's code, so the full offer and the questions reach them in the same
 words as everyone else.
-On WeChat, the founder's first reply to such a seller is the consent message of §2a, and §2
-follows after "同意".
+On WeChat, the founder's first reply to such a seller is the standard message of §2 with the
+consent paragraph of §2a in it.
 
 ---
 

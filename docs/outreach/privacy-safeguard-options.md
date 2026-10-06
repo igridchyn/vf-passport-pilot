@@ -9,7 +9,7 @@ for it. A paid legal review is a cost item (hard rule 6): answer A-002 `hold` wi
 **Choice made (decision log #21, card M-006):** paragraph H, option D and option B (D
 first, as the description of WeChat's own safeguards; B as our own basis). It was chosen by
 Claude on the founder's delegation and is for the founder to confirm on A-002. Not legal
-advice. The follow-on changes (T3, the consent message) are on card M-007.
+advice. The follow-on changes (T3, the consent paragraph) are on card M-007.
 
 **Where the text goes.** In the deploy copy only (A-002 step 1, `scripts/make-deploy-copy.sh`),
 in section 5 of `privacy.html` (zh-CN) and `en/privacy.html`. Each option below replaces the
@@ -176,8 +176,9 @@ lists explicit consent separately from the "occasional" contract case. [establis
   a WeChat contact. The final wording is in `form.md` (screen 4), as drafted from this option
   and then extended with the absence of an adequacy decision and of a safeguard of our own,
   which Art. 49(1)(a) asks the seller to be told [zh-check].
-- **A consent message as the first reply on WeChat** to a seller who wrote first, before
-  anything else is discussed: `kit.md` §2a, with the same risk text [zh-check].
+- **A consent paragraph in the first WeChat message** to a seller who wrote first: `kit.md`
+  §2a, with the same risk text. It sits inside the standard first message, which PREREG-F
+  §2.2 requires to carry the offer, the price and the questions [zh-check].
 - Keep a record of who consented, in your own files (never the repo), and stop using WeChat
   with anyone who withdraws.
 - The tick and the message line change `form.md`, `tally-paste.md` and the FD.4 kit, which are

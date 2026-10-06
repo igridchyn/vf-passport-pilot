@@ -16,7 +16,7 @@ You are continuing the autonomous execution of the **PassportPilot validation tr
   and closed; privacy §5 = paragraph H + option D + option B (chosen by Claude on the founder's
   delegation; the founder confirms on A-002).
   - New comms card **M-007** (non-blocking, but a fourth gate on A-002): T3 in `form.md` and
-    `tally-paste.md`, the WeChat consent message in `kit.md` §2a and rule 15.
+    `tally-paste.md`, the WeChat consent paragraph in `kit.md` §2a and rule 15.
   - **Applying M-007:** `approve` closes it. `changes` means edit `form.md`, then regenerate
     `tally-paste.md` (T3 block, setup checklist and zh extract) and re-check it against `form.md`,
     then `kit.md` §2a. `hold` opens a cost card for a legal review.
