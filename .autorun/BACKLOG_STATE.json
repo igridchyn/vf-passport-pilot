@@ -29,6 +29,27 @@
    "date": "2026-10-06"
   }
  },
- "inserted": [],
+ "inserted": [
+  {
+   "before": "FD.3",
+   "id": "FD.3a",
+   "kind": "research",
+   "lane": "auto",
+   "needs": [
+    "FD.2"
+   ],
+   "title": "EUR-Lex check of the page's GPSR claims (A-002 gate 3)"
+  },
+  {
+   "before": "FD.3",
+   "id": "FD.3b",
+   "kind": "comms",
+   "lane": "comms",
+   "needs": [
+    "FD.2"
+   ],
+   "title": "Publish kit: deploy-copy script, Tally paste text, safeguard drafts"
+  }
+ ],
  "reviewed": []
 }

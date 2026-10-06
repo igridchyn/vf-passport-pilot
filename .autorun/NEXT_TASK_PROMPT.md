@@ -9,15 +9,17 @@ You are continuing the autonomous execution of the **PassportPilot validation tr
 `.autorun/LEDGER.md` is the one-line-per-item history. **Do not read it as part of an item** — `git log` has the detail if you need it.
 
 <!-- ===== CURRENT ITEM — step 11 replaces ONLY this block; change nothing else in this file ===== -->
-<!-- kind: impl -->
-<!-- item: wait -->
-**Nothing is eligible.** Waiting on the operator: A-001, A-002, D-001, M-001, M-002, M-003, M-004. At session start run `autorun-plan card inbox`, then `autorun-plan next`; if it still says wait, write PAUSE.
-- Hand-off (2026-10-06): FD.3 runbook card A-002 is open (blocking; FD.3 stays not done, founder-owned).
-  When any card is answered, `autorun-plan card inbox` then `autorun-plan next` renders the
-  `card:<ID>` item. Applying A-002 (`done`): log the URLs, check result and ECB rate in the
-  decision log; fill `{{FORM_URL}}` in `site/` and `{{PAGE_URL}}`/`{{FORM_URL}}` in
-  `docs/outreach/` (public addresses only; never the founder's identity details or e-mail);
-  apply the reviewer's listed corrections; `autorun-plan card close A-002 --done-task`.
+<!-- kind: research -->
+<!-- item: FD.3a -->
+**FD.3a — EUR-Lex check of the page's GPSR claims (A-002 gate 3)** · lane **auto**
+- Plan: `autorun-plan show FD.3a` (docs/planning/validation-plan.md).
+- Queued by the founder (2026-10-06, decision log #18): FD.3a then FD.3b prepare A-002 (EUR-Lex
+  gate 3, then the publish kit). Neither deploys, buys or contacts anything; A-002 stays open
+  and blocking, FD.3 stays founder-owned.
+- Applying A-002 (`done`) later: log the URLs, check result and ECB rate in the decision log;
+  fill `{{FORM_URL}}` in `site/` and `{{PAGE_URL}}`/`{{FORM_URL}}` in `docs/outreach/` (public
+  addresses only; never the founder's identity details or e-mail); apply the reviewer's listed
+  corrections; `autorun-plan card close A-002 --done-task`.
 <!-- ===== END CURRENT ITEM ===== -->
 
 Begin with the skill, then the reads, then the current item.

@@ -117,6 +117,47 @@ form tool), the privacy notice, an imprint placeholder. Draft the non-binding LO
 EN (`docs/outreach/loi.md`). Flag every sentence a native speaker should check. Run
 `/claims-audit`. Comms card: the founder reviews copy.
 
+### FD.3a — EUR-Lex check of the page's GPSR claims (gate 3 of A-002)
+
+Added by the founder on 2026-10-06 (decision log #18). Read the full consolidated text of
+Regulation (EU) 2023/988 on EUR-Lex (the HTML text itself, not search snippets) and check lines
+L1 (GPSR applies since 13 Dec 2024), L5 (an EU-established economic operator is required) and
+the marketplace statement in `docs/research/3_gpsr_copy_sources.md` against it. For each, record
+the article and paragraph, a short verbatim quote, the access date and the verdict
+(confirmed / needs rewording / wrong). Update `3_gpsr_copy_sources.md` and say plainly if a
+page could not be opened in full. If every line is confirmed, note on card A-002 that gate 3 is
+met. If any line needs to change, propose the corrected zh-CN + EN wording, apply it in
+`site/` and `docs/outreach/` marked `zh-check`, run `/claims-audit`, and open a comms card for
+the founder (the change also needs M-002's review). Serves test D.
+
+### FD.3b — Publish kit: deploy-copy script, Tally paste text, safeguard drafts
+
+Added by the founder on 2026-10-06 (decision log #18), to cut the founder's time on A-002. The
+loop prepares; it deploys, buys and contacts nothing (hard rules 1 and 6) and holds no identity
+data (hard rule 2).
+- `scripts/make-deploy-copy.sh <target dir>`: refuses a target inside the repo; copies `site/`
+  there; strips the `zh-check` / `DRAFT` / `FD.3` HTML comments; lists every remaining
+  placeholder (`class="placeholder"`, `{{…}}`, `example.com`) with file:line; prints the
+  `diff -r` command for step 6. Optional `--form-url URL` fills `{{FORM_URL}}` in the copy.
+  Covered by `bash scripts/check.sh`, plus a smoke test that the script runs on a temp dir.
+- `docs/outreach/tally-paste.md`: the form (`form.md`, screens 1 to 6) and the LOI (`loi.md`)
+  as paste-ready blocks in Tally's order, zh-CN first, English under it. It keeps
+  `{{PAGE_URL}}`, `{{CONTACT}}`, `[page date]` and the D3 yen edges as marked fills, and adds a
+  short Tally setup checklist: hidden field `ch`, nothing pre-ticked, L2 to L4 shown only after
+  L1, integrations and analytics off. Also the D3 yen calculation: the ECB reference-rate page,
+  the rounding rule, and today's value as a worked example only (the founder recalculates on
+  publication day). The step-7 reviewer extract (zh-CN lines only) comes out as its own section.
+- `docs/outreach/privacy-safeguard-options.md`: section 5 (transfers outside the EEA) of the
+  privacy notice as two or three short alternative paragraphs in zh-CN + EN, each with the
+  GDPR article it relies on (primary source, EUR-Lex) and what it commits the founder to.
+  Marked as drafts, not legal advice; the choice stays the founder's.
+- Run `/claims-audit` on the two new outreach files. Amend card A-002's steps 1, 3, 4 and 6 to
+  point to the kit (the card stays open and blocking). Open one non-blocking comms card for the
+  founder to review the kit, the safeguard options above all.
+- If M-002 changes `form.md` or `loi.md` later, the `card:M-002` item regenerates
+  `tally-paste.md` in the same change.
+Serves test D.
+
 ### FD.3 — Publish the page (founder)
 
 Founder: decide on the PREREG-F cost items (domain, native-speaker review), get the zh-CN copy

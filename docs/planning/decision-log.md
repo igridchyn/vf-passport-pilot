@@ -413,3 +413,16 @@ repo holds none). Card A-001 is closed and S0 marked done. They are archival evi
 `docs/research/1_feasibility_refresh.md` and `2_spec_open_items.md` supersede them where they
 differ, and nothing from them goes into public copy without the primary source (hard rule 4).
 E0.1 (planning the build after a GO) no longer waits on S0.
+
+**#18 — Loop prepares A-002: FD.3a and FD.3b queued before FD.3 (2026-10-06)** *(founder)*. The
+founder asked the loop to take on the parts of A-002 that need no money, accounts, identity or
+contact, to cut the ~90 minutes on the card. Two tasks are inserted before FD.3:
+- **FD.3a** (auto): EUR-Lex check of L1, L5 and the marketplace statement against the full text
+  of Regulation (EU) 2023/988, closing A-002's gate 3 if all hold.
+- **FD.3b** (comms): `scripts/make-deploy-copy.sh` (a filled copy outside the repo), Tally
+  paste text with the D3 yen calculation, and draft options for the privacy notice's section 5
+  safeguard, with a non-blocking review card.
+Still the founder's: M-002 and D-001, the domain purchase, identity details, the choice of
+safeguard paragraph, the Tally and Cloudflare accounts and upload, the native-speaker check,
+the mainland-China check, and answering A-002. A command-line deploy (`wrangler`) stays out of
+the loop; the founder may run it in an interactive session. Serves test D.
