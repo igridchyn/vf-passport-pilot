@@ -404,3 +404,12 @@ marketplace sentence already names the Responsible Person field. One MINOR is fi
 the form's thank-you screen now promises a launch notice only to sellers who ticked T2
 (PREREG-F §6.3). The imprint placeholder's missing zh-check markers are left as they are,
 because the placeholder will be replaced. M-002's review covers the corrected text.
+
+**#17 — S0 done: feasibility runs and build spec imported (2026-10-06)**. At the founder's
+request, Claude imported the three artifacts from their claude.ai chats into
+`docs/background/feasibility-run1-2026-06.md`, `docs/background/feasibility-run2-2026-07-15.md`
+and `docs/spec-pack.md`, verbatim except one vendor support e-mail address in the spec (the
+repo holds none). Card A-001 is closed and S0 marked done. They are archival evidence:
+`docs/research/1_feasibility_refresh.md` and `2_spec_open_items.md` supersede them where they
+differ, and nothing from them goes into public copy without the primary source (hard rule 4).
+E0.1 (planning the build after a GO) no longer waits on S0.
