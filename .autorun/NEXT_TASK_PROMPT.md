@@ -9,16 +9,24 @@ You are continuing the autonomous execution of the **PassportPilot validation tr
 `.autorun/LEDGER.md` is the one-line-per-item history. **Do not read it as part of an item** — `git log` has the detail if you need it.
 
 <!-- ===== CURRENT ITEM — step 11 replaces ONLY this block; change nothing else in this file ===== -->
-<!-- kind: comms -->
-<!-- item: FD.3b -->
-**FD.3b — Publish kit: deploy-copy script, Tally paste text, safeguard drafts** · lane **comms**
-- Plan: `autorun-plan show FD.3b` (docs/planning/validation-plan.md).
-- Hand-off from FD.3a (decision log #19): L1 and the marketplace statement are confirmed
-  against the OJ text. L5 was reworded in `site/` ("What PassportPilot is not", now with an
-  Art. 2(1) limit and a 2019/1020 Art. 4 link), and comms card M-005 (non-blocking) asks the
-  founder to approve it. A-002's gate 3 counts as met only once M-005 is approved. The deploy
-  copy must take the current `site/`, and the Tally text must not restate L5 in its old form.
-  Leave the textile/jewellery scope question (decision #19) to E0.1. Do not put it in public copy.
+<!-- kind: impl -->
+<!-- item: wait -->
+**Nothing is eligible.** Waiting on the operator: A-002, D-001, M-001, M-002, M-003, M-004, M-005, M-006. At session start run `autorun-plan card inbox`, then `autorun-plan next`; if it still says wait, write PAUSE.
+- Hand-off from FD.3b (decision log #20): the publish kit is committed (121c94e).
+  - The kit: `scripts/make-deploy-copy.sh` (smoke test `scripts/test-make-deploy-copy.sh`),
+    `docs/outreach/tally-paste.md` and `docs/outreach/privacy-safeguard-options.md`.
+  - A-002 now points to the kit in steps 1, 3, 4, 6 and 7. A-002 stays open and blocking.
+  - **Applying M-006:** log the founder's privacy §5 choice (A / B / C / D / D+A / D+B) in
+    the decision log.
+    - B: draft tick T3 + the first-message line into `form.md`, `tally-paste.md` and the
+      FD.4 kit on a comms card.
+    - C: open a PREREG-F change card (protected file).
+    - Never write the founder's providers or identity details into `site/`.
+  - **Applying M-002** (if it edits `form.md` or `loi.md`): regenerate `tally-paste.md` in
+    the same change (sections C and D), and re-check it line by line against both files.
+  - **Applying A-002** (`done`): as in decision #15. If the ECB rate used is not dated the
+    publication day, log it as a deviation from PREREG-F §4 (decision #20).
+  - The textile/jewellery scope question (#19) stays with E0.1.
 <!-- ===== END CURRENT ITEM ===== -->
 
 Begin with the skill, then the reads, then the current item.
