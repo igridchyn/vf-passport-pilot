@@ -426,3 +426,35 @@ Still the founder's: M-002 and D-001, the domain purchase, identity details, the
 safeguard paragraph, the Tally and Cloudflare accounts and upload, the native-speaker check,
 the mainland-China check, and answering A-002. A command-line deploy (`wrangler`) stays out of
 the loop; the founder may run it in an interactive session. Serves test D.
+
+**#19 — FD.3a: GPSR text checked; L1 and the marketplace statement confirmed, L5 reworded (2026-10-06)** *(delegated; auto lane, comms card M-005)*.
+The loop read Regulation (EU) 2023/988 in full: the Official Journal PDF (OJ L 135,
+23.5.2023, pp. 1–51) from the EU Publications Office. The EUR-Lex HTML, ELI and PDF links came
+back empty to the fetch tool. No consolidated version was read, which departs from FD.3a's
+wording; the card says so and offers the founder a browser check of EUR-Lex.
+- **L1 confirmed** (Art. 52: "It shall apply from 13 December 2024."). **Marketplace statement
+  confirmed** as to the law (Art. 22(9), with Art. 19); that marketplaces do ask rests on R1.
+- **L5 wrong in scope.** Art. 16 is in Chapter III, Section 1, which Art. 2(1) third
+  subparagraph point (b) disapplies for products subject to Union harmonisation legislation
+  (Recitals 8 and 39). Those products get the same rule from 2019/1020 Art. 4 when their act is
+  listed in its Art. 4(5). The page now follows Art. 16(1) ("a product it covers"), states the
+  Art. 2(1) limit and the 2019/1020 Art. 4 parallel, and links both acts. The Chinese is marked
+  zh-check. M-005 (non-blocking) asks the founder to approve it with M-002. A-002's gate 3
+  counts as met when M-005 is approved.
+- **Recorded, not changed:** approved PREREG-F §1.1 still describes the page with the old L5
+  sentence. It is protected, no bar or number depends on it, and amending it is the founder's
+  call (a new card).
+- **Open question for E0.1 and any legal review.** Union harmonisation legislation (Art. 3(27))
+  includes the acts in 2019/1020 Annex I, among them REACH (item 22) and the textile labelling
+  regulation 1007/2011 (item 40). Neither is in 2019/1020 Art. 4(5). If textile or jewellery
+  products count as "subject to specific requirements imposed by Union harmonisation
+  legislation", then GPSR Arts 9–18 (the technical file and the responsible person included)
+  would not apply to them. That would change what the product drafts for two of the three test
+  categories. The Commission's GPSR guidance was not read [plausible, open]. The page no longer
+  depends on the answer.
+- Quality gate: claims audit (one MINOR fixed: "does not apply" alone could read as "no EU
+  operator needed"), then a read-only skeptic. The skeptic confirmed every quote and page number
+  and raised wording points, all fixed. `/simplify` and `/code-review` were not run because the
+  diff is copy and research only.
+
+Serves test D.
