@@ -6,6 +6,11 @@ not choose: the safeguard is a legal judgement, and the founder is the controlle
 for it. A paid legal review is a cost item (hard rule 6): answer A-002 `hold` with the note
 "legal review: quote asked" and the loop opens a cost card.
 
+**Choice made (decision log #21, card M-006):** paragraph H, option D and option B (D
+first, as the description of WeChat's own safeguards; B as our own basis). It was chosen by
+Claude on the founder's delegation and is for the founder to confirm on A-002. Not legal
+advice. The follow-on changes (T3, the consent message) are on card M-007.
+
 **Where the text goes.** In the deploy copy only (A-002 step 1, `scripts/make-deploy-copy.sh`),
 in section 5 of `privacy.html` (zh-CN) and `en/privacy.html`. Each option below replaces the
 `<span class="placeholder">[…]</span>` in that section. The sentence after it ("If you prefer,
@@ -168,18 +173,11 @@ lists explicit consent separately from the "occasional" contract case. [establis
 
 **What it commits you to.**
 - **A new form tick (T3)**, unticked, shown only when C1 is "微信 WeChat", and required for
-  a WeChat contact. Draft wording [zh-check]:
-  - zh-CN: "我同意 PassportPilot 通过微信与我沟通，并知悉我的信息因此会被传输到欧洲经济区以外，可能得不到与欧盟同等的保护（详见隐私说明第 5 节）。我可随时撤回同意。"
-  - EN: "I agree that PassportPilot communicates with me on WeChat, and I understand that my
-    information is then transferred outside the European Economic Area, where it may not be
-    protected to the EU standard (privacy notice, section 5). I can withdraw this consent at
-    any time."
-- **A consent line in the first WeChat message** to a seller who wrote first, before anything
-  else is discussed [zh-check]:
-  - zh-CN: "如您同意通过微信沟通（您的信息会因此传输到欧洲经济区以外，可能得不到与欧盟同等的保护，详见隐私说明第 5 节），请回复“同意”。"
-  - EN: "If you agree to talk on WeChat (your information is then transferred outside the
-    EEA, where it may not be protected to the EU standard; see section 5 of the privacy
-    notice), please reply "同意" (agree)."
+  a WeChat contact. The final wording is in `form.md` (screen 4), as drafted from this option
+  and then extended with the absence of an adequacy decision and of a safeguard of our own,
+  which Art. 49(1)(a) asks the seller to be told [zh-check].
+- **A consent message as the first reply on WeChat** to a seller who wrote first, before
+  anything else is discussed: `kit.md` §2a, with the same risk text [zh-check].
 - Keep a record of who consented, in your own files (never the repo), and stop using WeChat
   with anyone who withdraws.
 - The tick and the message line change `form.md`, `tally-paste.md` and the FD.4 kit, which are

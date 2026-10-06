@@ -5,7 +5,7 @@ FD.3b (`docs/planning/validation-plan.md`). Serves test **D**. Card A-002 step 4
 
 **What this is.** The text of `form.md` (screens 1 to 6) and `loi.md` (points 1 to 6), cut into
 blocks you paste into Tally in order, zh-CN first, English under it. **It adds no new text:**
-every sentence comes from those two files, as of commit `fabe1e0`. If `form.md` or `loi.md`
+every sentence comes from those two files, as of the commit that added T3 (decision log #21). If `form.md` or `loi.md`
 change (for example after M-002), this file is regenerated in the same change. If the two ever
 differ, `form.md` and `loi.md` win. Every zh-CN line still needs the native-speaker check
 (A-002 step 7); the reviewer extract is at the end.
@@ -40,12 +40,13 @@ only, never in the repo.
 - [ ] **No branching on qualification.** Everyone can finish the form. The only conditions:
   - L2, L3, L4 are hidden and shown only when L1 is ticked;
   - C2 is hidden and shown only when C1 is not "不留联系方式 no contact";
-  - T1 is required only when C2 is filled (Tally's "make answers required" action).
+  - T1 is required only when C2 is filled (Tally's "make answers required" action);
+  - T3 is hidden and shown only when C1 is "微信 WeChat", and required when shown.
   To show a block on a condition, hide it first in its block settings, then add conditional
   logic "show blocks" ([Tally help](https://tally.so/help/conditional-form-logic),
   [vendor claim], read 2026-10-06; Tally's help does not say whether a hidden required
   question still blocks submission, so test it in the preview).
-- [ ] Required: Q5 and Q6 only, plus T1 under its condition. Everything else optional.
+- [ ] Required: Q5 and Q6 only, plus T1 and T3 under their conditions. Everything else optional.
 - [ ] **Integrations off:** no Google Sheets, Notion, Airtable, Zapier, Make, webhooks, no
   Google Analytics or Meta Pixel, no e-mail notifications to respondents.
 - [ ] **No analytics** (`form.md`: "No Tally analytics or third-party integrations"): add no
@@ -343,6 +344,14 @@ Contact me about early access to PassportPilot, and ask me to confirm any letter
 Keep my contact after the test to tell me if PassportPilot launches (at most 12 months). I can withdraw this consent at any time.
 ```
 
+**T3** · Checkbox (one tick) · unticked · hidden; shown only when C1 is "微信 WeChat", and required when shown.
+
+```
+我同意 PassportPilot 通过微信与我沟通，并知悉我的信息因此会被传输到欧洲经济区以外：欧盟委员会未就这些国家或地区作出充分性决定，我们自己也没有与微信运营方订立保障措施，我的信息可能得不到与欧盟同等的保护（详见隐私说明第 5 节）。我可随时撤回同意。
+
+I agree that PassportPilot communicates with me on WeChat, and I understand that my information is then transferred outside the European Economic Area, where the European Commission has not found the protection adequate and we have no safeguard of our own with the WeChat operator, so my information may not be protected to the EU standard (privacy notice, section 5). I can withdraw this consent at any time.
+```
+
 ### Page 5 — Letter of intent and pre-payment (optional)
 
 Block 5.1:
@@ -489,6 +498,7 @@ PassportPilot 是一款计划中的工具：您用中文回答关于产品的问
 微信号 / 电子邮箱 / 电话
 我同意 PassportPilot 就抢先体验与我联系，并请我确认我在本表单中签署的意向书或预付意向。PassportPilot 仍在开发中，尚未上线，现在不收取任何款项。我可随时撤回同意。详见隐私说明。
 测试结束后保留我的联系方式，仅用于告知 PassportPilot 是否上线（最长 12 个月）。我可随时撤回同意。
+我同意 PassportPilot 通过微信与我沟通，并知悉我的信息因此会被传输到欧洲经济区以外：欧盟委员会未就这些国家或地区作出充分性决定，我们自己也没有与微信运营方订立保障措施，我的信息可能得不到与欧盟同等的保护（详见隐私说明第 5 节）。我可随时撤回同意。
 
 【第 5 页】
 以下两项都是自愿的，都不产生任何付款义务。产品尚未上线，现在不收取任何款项。

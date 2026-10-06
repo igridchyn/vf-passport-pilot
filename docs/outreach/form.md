@@ -8,7 +8,7 @@ FD.3; the loop never sees the form or its answers (hard rule 2).
 **Rules this copy follows** (PREREG-F, approved): the offer and price are shown **before**
 the questions (§2.2); qualification is the three self-declared answers of §2.1 plus the
 required shop name; diagnostics are §4's; contact is optional and only **one** channel
-(§3.1, §6.1); the two consent ticks are §6.5's, finalised here; the LOI step is `loi.md`;
+(§3.1, §6.1); the two consent ticks are §6.5's, finalised here, plus a third tick (T3) for a WeChat contact (decision log #21); the LOI step is `loi.md`;
 a form signature or pre-pay tick is recorded as **unconfirmed** until the seller confirms
 in 1:1 (§3.2–§3.3). No person's name is asked as a field (§6.1).
 
@@ -21,6 +21,9 @@ in 1:1 (§3.2–§3.3). No person's name is asked as a field (§6.1).
 - **No branching on qualification.** Everyone can finish the form, so that the founder can
   count the non-qualified submissions too (§2.2 funnel). The founder classifies afterwards.
 - Tick-box answers are never pre-ticked.
+- **T3 is the only other condition on screen 4** besides C2: it is hidden and shown only when
+  C1 is "微信 WeChat", and required when shown. A seller who will not tick it picks another
+  contact type or "no contact" and can still submit everything else.
 - **Status line on every screen** (PREREG-F §1.3, §7.1): put this fixed line at the top of
   screens 1–6, in both languages:
   zh-CN [zh-check]: "开发中 · 抢先体验登记 · 产品尚未上线，现在无法购买，也不收取任何款项"
@@ -116,6 +119,15 @@ entirely optional."
 | C2 | 微信号 / 电子邮箱 / 电话 | WeChat ID / e-mail / phone | Short text, shown only if C1 is not "no contact" |
 | T1 | 我同意 PassportPilot 就抢先体验与我联系，并请我确认我在本表单中签署的意向书或预付意向。PassportPilot 仍在开发中，尚未上线，现在不收取任何款项。我可随时撤回同意。详见隐私说明。 | Contact me about early access to PassportPilot, and ask me to confirm any letter of intent or pre-payment answer I give on this form. PassportPilot is in development and not available yet; no payment is taken now. I can withdraw this consent at any time. See the privacy notice. | Tick box, unticked; required only if C2 is filled |
 | T2 | 测试结束后保留我的联系方式，仅用于告知 PassportPilot 是否上线（最长 12 个月）。我可随时撤回同意。 | Keep my contact after the test to tell me if PassportPilot launches (at most 12 months). I can withdraw this consent at any time. | Tick box, unticked, optional |
+| T3 | 我同意 PassportPilot 通过微信与我沟通，并知悉我的信息因此会被传输到欧洲经济区以外：欧盟委员会未就这些国家或地区作出充分性决定，我们自己也没有与微信运营方订立保障措施，我的信息可能得不到与欧盟同等的保护（详见隐私说明第 5 节）。我可随时撤回同意。 | I agree that PassportPilot communicates with me on WeChat, and I understand that my information is then transferred outside the European Economic Area, where the European Commission has not found the protection adequate and we have no safeguard of our own with the WeChat operator, so my information may not be protected to the EU standard (privacy notice, section 5). I can withdraw this consent at any time. | Tick box, unticked; shown only when C1 is "微信 WeChat", and required then |
+
+**T3 added (decision log #21).** Card M-006 chose option B of
+`privacy-safeguard-options.md` for transfers through WeChat: the seller's explicit consent
+under GDPR Art. 49(1)(a), given after being told the risks. T3 is that consent for a seller
+who gives a WeChat ID on this form; the same consent is asked in the first WeChat message to
+a seller who wrote first (`kit.md` §2a). The risk text is the text of privacy notice section
+5, option B. A seller who gives e-mail or phone needs no T3. T3 is not part of PREREG-F §6.5's
+two ticks, and no bar or number depends on it (§6.1: contact is optional and one channel).
 
 **T1 finalised from the PREREG-F §6.5 draft** (§6.5 left the final wording to FD.2;
 decision log #13). Two changes, in both languages:

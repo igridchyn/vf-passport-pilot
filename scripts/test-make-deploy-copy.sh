@@ -65,4 +65,12 @@ rc=0; res=$(bash -c "$cmd" 2>&1) || rc=$?
 [[ $rc == 1 && $res == *FILLED-BY-FOUNDER* ]] || fail "step-6 diff misses a fill (exit $rc): $res"
 [[ $(grep -c '^[<>]' <<<"$res") == 1 ]] || fail "step-6 diff shows more than the fill: $res"
 
+# The command names the step-1 commit and refuses to run once the repo is on another one.
+head=$(git -C "$(dirname "$script")/.." rev-parse --short HEAD)
+grep -q "made at commit $head" <<<"$out" || fail "step-6 hint does not print the step-1 commit"
+stale=${cmd//= $head ]/= 0000000 ]}
+[[ $stale != "$cmd" ]] || fail "step-6 command has no commit guard"
+rc=0; res=$(bash -c "$stale" 2>&1) || rc=$?
+[[ $rc != 0 && -z $res ]] || fail "step-6 command ran although the repo had moved on (exit $rc): $res"
+
 echo "make-deploy-copy smoke test: ok"

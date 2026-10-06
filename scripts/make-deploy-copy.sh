@@ -91,7 +91,9 @@ else
 fi
 
 echo
-echo "Step 6, after filling: compare with a fresh copy, so only your fills show:"
-base_cmd="base=\$(mktemp -d)/site && bash $(printf %q "$repo/scripts/make-deploy-copy.sh") \"\$base\""
+echo "Step 6, after filling: compare with a fresh copy, so only your fills show."
+echo "This copy was made at commit $commit; the command stops if the repo has moved on since,"
+echo "because a fresh copy from another commit would show that difference as well:"
+base_cmd="[ \"\$(git -C $(printf %q "$repo") rev-parse --short HEAD)\" = $commit ] && base=\$(mktemp -d)/site && bash $(printf %q "$repo/scripts/make-deploy-copy.sh") \"\$base\""
 [[ -n $form_url ]] && base_cmd+=" --form-url $(printf %q "$form_url")"
 echo "  $base_cmd >/dev/null && diff -r \"\$base\" $(printf %q "$abs") | less"

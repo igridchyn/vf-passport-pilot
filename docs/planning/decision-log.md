@@ -517,3 +517,58 @@ Nothing was deployed, bought, registered or sent, and no identity data was handl
   tick, if chosen, changes `form.md` under M-002, and `tally-paste.md` is regenerated with it.
 
 Serves test D.
+
+**#21 — Cards D-001, M-002 and M-006 answered and applied (2026-10-06)** *(founder answers; the M-006 choice delegated to Claude)*.
+- **D-001: continue.** The conditional GO holds and `decisive-test.md` is unchanged. The three
+  refinements of #7 stop being provisional: the product-count price scope and the
+  "provider and price paid" diagnostic (PREREG-F, #8 and #11), the Chinese-first-plus-partner positioning
+  (the page, #13) and the partner-type order (the channel map, #9). The text that rested on D-001
+  as provisional stands.
+- **M-002: approve.** The landing page, privacy notice, form copy and LOI stand as drafted. The
+  FD.3 gates on card A-002 stay open (M-005, the new M-007, the founder's own steps).
+- **M-006: privacy §5 = paragraph H + option D + option B.** The founder delegated the choice
+  to Claude in a Claude Code session; the founder confirms it on A-002. Reasons, from the card
+  note:
+  - B over A: a four-week campaign with 50+ sellers is hard to call "occasional" (Recital 111),
+    which A depends on. B rests on the text of Art. 49(1)(a) and costs one form tick (T3) and one
+    consent message on WeChat.
+  - Not C: it changes the approved PREREG-F and would likely cut replies.
+  - Not D alone: it describes WeChat's safeguard, not ours. D is kept as the description.
+  - Not legal advice. A paid legal review before scaling beyond the test stays an optional cost
+    card (hard rule 6).
+- **Drafted for B (comms card M-007; nothing sent or published):**
+  - `form.md` and `tally-paste.md` (regenerated, checked line by line against `form.md`): tick
+    T3, shown only when C1 is WeChat and required then. The text is the options file's, with
+    "§5" read as the privacy notice's section 5. A seller who will not tick it chooses another
+    contact type or "no contact"; the form still submits. This is a second condition on screen 4
+    beside C2, not branching on qualification.
+  - `kit.md`: rule 15 and new §2a, the WeChat consent message sent alone as the first reply on
+    WeChat (it carries the in-development line and the privacy link, rule 1 and 6), with what to
+    do on "同意", on no "同意", on no reply and on a withdrawal; §2 and §2b point to it; the form
+    route (T3) needs no consent message.
+  - Nothing of the founder's providers or identity goes into `site/`; section 5 is still filled
+    in the deploy copy only. The options file records the choice.
+  - **Open point for M-007:** a seller whose first WeChat message already contains answers has sent
+    data before consenting. The kit counts it under the §2 tracker rules and stops the
+    conversation on WeChat until "同意"; whether that is enough is for the founder or a legal review.
+    (EDPB Guidelines 05/2021 were not read: data a seller sends you directly may not be a transfer
+    by you at all [plausible].)
+- **M-006's two MINOR points fixed:** the card now says the round-2 fixes of #20 were not
+  re-audited (it said the files "passed" two rounds); the step-6 command printed by
+  `scripts/make-deploy-copy.sh` now carries the step-1 commit and stops if the repo has moved on
+  (a fresh copy from another commit would have shown that difference as well). The smoke test
+  checks both.
+- **Still pending from #20:** if the ECB rate used for D3 is not dated the publication day, log it
+  as a deviation from PREREG-F §4 when A-002 is applied. The textile/jewellery scope question (#19)
+  stays with E0.1.
+- Quality gate: one claims audit of the diff (rubric of `/claims-audit`), 0 BLOCKER, 1 MAJOR,
+  2 MINOR, all fixed:
+  - MAJOR: T3 and the consent message did not tell the seller about the missing adequacy
+    decision and the missing safeguard of our own, which Art. 49(1)(a) asks the seller to be told.
+    Both now say it, in both languages; the options file points to the final text.
+  - MINOR: §2a described section 5 as already written; it now says "once the founder has filled it in".
+  - MINOR: the consent message promised no more WeChat messages after a withdrawal, yet the kit sends one confirming reply; the message now says so.
+  The fixes were not audited again. `/simplify` and `/code-review` were not run on the copy; the
+  script change is 6 lines and its smoke test passes. T3's text in `tally-paste.md` is checked equal to `form.md`.
+
+Serves test D.
